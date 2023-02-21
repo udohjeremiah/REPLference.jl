@@ -3,5 +3,8 @@ uuid = "89b048f0-36f8-47dc-b812-110e59d1ec6a"
 authors = ["Udoh Jeremiah <udohjeremiah@icloud.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
 [compat]
 julia = "1.8.2"
