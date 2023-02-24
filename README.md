@@ -1,4 +1,4 @@
-# REPLference
+# REPLference.jl
 `REPLference.jl` is a package that provides a solution for two problems. First, it provides
 materials for beginners to learn basic programming in Julia within the Julia REPL. Second,
 it tries to solve the "dot.syntax" problem that new users face in accessing methods in
@@ -139,10 +139,10 @@ applied to an object but is not printed by `fun` for that object, please open a 
 (PR) for it.
 
 Also, if you have a new topic entirely that is not in the comment section marked as
-`# = TODO ... = #`, but you would like to add it, please create a new file for it and follow
-the format used in the package: `man` should return the docstring of `fun` (which is the
-text you will be creating as a manual for the object), and `fun` will print the methods that
-can be called on the object if any exist.
+`# = TO DO ... = #`, but you would like to add it, please create a new file for it and
+follow the format used in the package: `man` should return the docstring of `fun` (which is
+the text you will be creating as a manual for the object), and `fun` will print the methods
+that can be called on the object if any exist.
 
 ## Citing
 If you use this for your work, please cite us.
