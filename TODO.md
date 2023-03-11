@@ -52,10 +52,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `utility_script.jl` file that contains internal functions required for
-          implementing the package.
-    - [ ] Generate an `all_names.txt` file that contains a list of all documented names
-          (both exported and unexported) in Julia.
     - [ ] Create a `_1_keyword.jl` file that contains a manual about keywords in Julia.
     - [ ] Create a `_2_variable.jl` file that contains a manual about variables in Julia and
           the methods that can be called on them.
@@ -119,7 +115,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Add the `tree` method for displaying the subtypes and supertypes of a name.
 
 - [ ] Create the `test` directory:
-    - [ ] Provide test for the names in `utility_script.jl`.
     - [ ] Provide test for the names in `_1_keyword.jl`.
     - [ ] Provide test for the names in `_2_variable.jl`.
     - [ ] Provide test for the names in `_3_operator.jl`.
@@ -167,5 +162,11 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Create the `LICENCE.md` file: [`#6`](https://github.com/udohjeremiah/REPLference.jl/pull/6)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Create the `CITATION.bib` file: [`#9`](https://github.com/udohjeremiah/REPLference.jl/pull/9)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `utility_script.jl` file: [`#13`](https://github.com/udohjeremiah/REPLference.jl/pull/13)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Provide test for the names in `utility_script.jl`: [`#16`](https://github.com/udohjeremiah/REPLference.jl/pull/16)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
