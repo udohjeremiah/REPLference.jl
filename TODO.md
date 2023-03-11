@@ -114,32 +114,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Add the `tree` method for displaying the subtypes and supertypes of a name.
 
 - [ ] Create the `test` directory:
-    - [ ] Provide test for the names in `_2_variable.jl`.
-    - [ ] Provide test for the names in `_3_operator.jl`.
-    - [ ] Provide test for the names in `_4_integer.jl`.
-    - [ ] Provide test for the names in `_5_float.jl`.
-    - [ ] Provide test for the names in `_6_complex.jl`.
-    - [ ] Provide test for the names in `_7_rational.jl`.
-    - [ ] Provide test for the names in `_8_irrational.jl`.
-    - [ ] Provide test for the names in `_9_character.jl`.
-    - [ ] Provide test for the names in `_10_string.jl`.
-    - [ ] Provide test for the names in `_11_range.jl`.
-    - [ ] Provide test for the names in `_12_array.jl`.
-    - [ ] Provide test for the names in `_13_tuple.jl`.
-    - [ ] Provide test for the names in `_14_dict.jl`.
-    - [ ] Provide test for the names in `_15_set.jl`.
-    - [ ] Provide test for the names in `_16_type.jl`.
-    - [ ] Provide test for the names in `_17_function.jl`.
-    - [ ] Provide test for the names in `_18_file.jl`.
-    - [ ] Provide test for the names in `_19_module.jl`.
-    - [ ] Provide test for the names in `_20_regex.jl`.
-    - [ ] Provide test for the names in `_21_date.jl`.
-    - [ ] Provide test for the names in `_22_random.jl`.
-    - [ ] Provide test for the names in `_23_metaprogramming.jl`.
-    - [ ] Provide test for the names in `_24_error.jl`.
-    - [ ] Provide test for the names in `_25_pointer.jl`.
-    - [ ] Provide test for the names in `_26_system.jl`.
-    - [ ] Provide test for the names in `_27_thread.jl`.
     - [ ] Provide test for the names in `REPLference.jl`.
 
 - [ ] Register the package and/or release this version.
@@ -148,9 +122,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Provide test for the names in `_1_keyword.jl`: [`test-_1_keyword.jl)`](https://github.com/udohjeremiah/REPLference.jl/tree/test-_1_keyword.jl)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -168,7 +139,5 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Create the `Project.toml` file: [`#21`](https://github.com/udohjeremiah/REPLference.jl/pull/21)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create a `_1_keyword.jl` file: [`#24`](https://github.com/udohjeremiah/REPLference.jl/pull/24)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
