@@ -169,4 +169,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
       [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `Project.toml` file: [`#21`]((https://github.com/udohjeremiah/REPLference.jl/pull/21)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
