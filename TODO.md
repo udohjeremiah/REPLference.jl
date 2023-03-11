@@ -156,8 +156,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
       [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `utility_script.jl` file: [`utility_script.jl-file`](https://github.com/udohjeremiah/REPLference.jl/tree/utility_script.jl-file)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -167,5 +165,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Create the `LICENCE.md` file: [`#6`](https://github.com/udohjeremiah/REPLference.jl/pull/6)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Create the `CITATION.bib` file: [`#9`](https://github.com/udohjeremiah/REPLference.jl/pull/9)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `utility_script.jl` file: [`#13`](https://github.com/udohjeremiah/REPLference.jl/pull/)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
