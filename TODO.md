@@ -149,9 +149,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create a `_1_keyword.jl` file: [`_1_keyword.jl-file`](https://github.com/udohjeremiah/REPLference.jl/tree/_1_keyword.jl-file)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -168,6 +165,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
       [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `Project.toml` file: [`#21`]((https://github.com/udohjeremiah/REPLference.jl/pull/21)
+- [x] Create the `Project.toml` file: [`#21`](https://github.com/udohjeremiah/REPLference.jl/pull/21)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create a `_1_keyword.jl` file: [`#24`](https://github.com/udohjeremiah/REPLference.jl/pull/24)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
