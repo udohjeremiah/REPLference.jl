@@ -48,7 +48,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
     - [ ] Add necessary information about the package in the `README.md` file.
     - [ ] Add badges to the `README.md` file.
 
-- [ ] Create the `CITATION.bib` file.
 - [ ] Create the `./github/workflows` file.
 - [ ] Create the `.gitignore` file.
 - [ ] Create the `Project.toml` file.
@@ -157,6 +156,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create the `CITATION.bib` file: [citation.bib-file](https://github.com/udohjeremiah/REPLference.jl/tree/citation.bib-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
