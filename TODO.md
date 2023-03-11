@@ -52,7 +52,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `_1_keyword.jl` file that contains a manual about keywords in Julia.
     - [ ] Create a `_2_variable.jl` file that contains a manual about variables in Julia and
           the methods that can be called on them.
     - [ ] Create a `_3_operator.jl` file that contains a manual about operators in Julia and
@@ -150,6 +149,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create a `_1_keyword.jl` file: [`_1_keyword.jl-file`](https://github.com/udohjeremiah/REPLference.jl/tree/_1_keyword.jl-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
