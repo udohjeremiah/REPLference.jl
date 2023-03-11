@@ -52,48 +52,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `_2_variable.jl` file that contains a manual about variables in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_3_operator.jl` file that contains a manual about operators in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_4_integer.jl` file that contains a manual about integers in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_5_float.jl` file that contains a manual about floating-point in Julia
-          and the methods that can be called on them.
-    - [ ] Create a `_6_complex.jl` file that contains a manual about complex numbers in
-          Julia and the methods that can be called on them.
-    - [ ] Create a `_7_rational.jl` file that contains a manual about rational numbers in
-          Julia and the methods that can be called on them.
-    - [ ] Create a `_8_irrational.jl` file that contains a manual about irrational numbers
-          in Julia and the methods that can be called on them.
-    - [ ] Create a `_9_character.jl` file that contains a manual about characters in Julia
-          and the methods that can be called on them.
-    - [ ] Create a `_10_string.jl` file that contains a manual about strings in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_11_range.jl` file that contains a manual about ranges in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_12_array.jl` file that contains a manual about arrays in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_13_tuple.jl` file that contains a manual about tuples in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_14_dict.jl` file that contains a manual about dictionaries in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_15_set.jl` file that contains a manual about sets in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_16_type.jl` file that contains a manual about types in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_17_function.jl` file that contains a manual about functions in Julia
-          and the methods that can be called on them.
-    - [ ] Create a `_18_file.jl` file that contains a manual about files in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_19_module.jl` file that contains a manual about modules in Julia and
-          the methods that can be called on them.
-    - [ ] Create a `_20_regex.jl` file that contains a manual about regexes in Julia and the
-          methods that can be called on them.
-    - [ ] Create a `_21_date.jl` file that contains a manual about dates and time in Julia
-          and the methods that can be called on them.
-    - [ ] Create a `_22_radom.jl` file that contains a manual about randomness in Julia and
-          the methods that can be called on the topic.
     - [ ] Create a `_23_metaprogramming.jl` file that contains a manual about
           metaprogramming in Julia and the methods that can be called on the topic.
     - [ ] Create a `_24_error.jl` file that contains a manual about error handling in Julia
@@ -122,49 +80,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `_2_variable.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_3_operator.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_4_integer.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_5_float.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_6_complex.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_7_rational.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_8_irrational.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_9_character.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_10_string.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_11_range.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_12_array.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_13_tuple.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_14_dict.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_15_set.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_16_type.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_17_function.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_18_file.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_19_module.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_20_regex.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_21_date.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Create the `_22_radom.jl` file: [`all-files`](https://github.com/udohjeremiah/REPLference.jl/tree/all-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -182,5 +97,47 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Create the `Project.toml` file: [`#21`](https://github.com/udohjeremiah/REPLference.jl/pull/21)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_2_variable.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_3_operator.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_4_integer.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_5_float.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_6_complex.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_7_rational.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_8_irrational.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_9_character.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_10_string.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_11_range.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_12_array.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_13_tuple.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_14_dict.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_15_set.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_16_type.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_17_function.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_18_file.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_19_module.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_20_regex.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_21_date.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_22_radom.jl` file: [`28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
