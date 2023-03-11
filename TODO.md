@@ -50,7 +50,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [ ] Create the `./github/workflows` file.
 - [ ] Create the `.gitignore` file.
-- [ ] Create the `Project.toml` file.
 
 - [ ] Create the `src` directory:
     - [ ] Create a `utility_script.jl` file that contains internal functions required for
@@ -156,6 +155,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
