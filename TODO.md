@@ -52,8 +52,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
-    - [ ] Generate an `all_names.txt` file that contains a list of all documented names
-          (both exported and unexported) in Julia.
     - [ ] Create a `_1_keyword.jl` file that contains a manual about keywords in Julia.
     - [ ] Create a `_2_variable.jl` file that contains a manual about variables in Julia and
           the methods that can be called on them.
@@ -154,6 +152,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 <details><summary></summary>
 
 - [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [ ] Generate the `all_names.txt` file: [`all_names.txt-file`](https://github.com/udohjeremiah/REPLference.jl/tree/all_names.txt-file)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
