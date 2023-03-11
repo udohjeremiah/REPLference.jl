@@ -157,13 +157,12 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `LICENCE.md` file: [licence.md-file](https://github.com/udohjeremiah/REPLference.jl/tree/licence.md-file)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-
 </details>
 
 ## Done ✓
 
 <details><summary></summary>
+
+- [x] Create the `LICENCE.md` file: [`#6`](https://github.com/udohjeremiah/REPLference.jl/pull/6)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
