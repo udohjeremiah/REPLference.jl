@@ -155,8 +155,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
       [@udohjeremiah](https://github.com/udohjeremiah)
-- [ ] Provide test for the names in `utility_script.jl`: [`test-utility_script.jl`](https://github.com/udohjeremiah/REPLference.jl/tree/test-utility_script.jl)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -167,6 +165,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Create the `CITATION.bib` file: [`#9`](https://github.com/udohjeremiah/REPLference.jl/pull/9)
       [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `utility_script.jl` file: [`#13`](https://github.com/udohjeremiah/REPLference.jl/pull/)
+- [x] Create the `utility_script.jl` file: [`#13`](https://github.com/udohjeremiah/REPLference.jl/pull/13)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Provide test for the names in `utility_script.jl`: [`#16`](https://github.com/udohjeremiah/REPLference.jl/pull/16)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
