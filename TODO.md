@@ -156,9 +156,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `CITATION.bib` file: [citation.bib-file](https://github.com/udohjeremiah/REPLference.jl/tree/citation.bib-file)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -166,5 +163,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
 <details><summary></summary>
 
 - [x] Create the `LICENCE.md` file: [`#6`](https://github.com/udohjeremiah/REPLference.jl/pull/6)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `CITATION.bib` file: [`#9`](https://github.com/udohjeremiah/REPLference.jl/pull/9)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
