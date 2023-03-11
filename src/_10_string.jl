@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # STRINGS
 In mathematics, a sequence is an enumerated collection of objects in which repetitions are

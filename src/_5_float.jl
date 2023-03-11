@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # FLOATING-POINTS
 Floating-point values are a fundamental component of arithmetic and computation. Built-in

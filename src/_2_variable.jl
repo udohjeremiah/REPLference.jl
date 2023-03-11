@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 A variable, in Julia, is a name associated (or bound) with a value. The value a variable was
 previously bound to can be changed (except if stated as constant using `const`). They

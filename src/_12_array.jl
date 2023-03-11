@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # ARRAYS
 In programming, an array is the most common data structure one would ever work with.

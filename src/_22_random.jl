@@ -1,4 +1,4 @@
-"""
+@doc raw"""
 # RANDOM NUMBERS
 "Random numbers" as the name suggests, "are numbers chosen by chance, i.e. randomly, from a
 set of numbers". However, in computer programming, these numbers are not really chosen by

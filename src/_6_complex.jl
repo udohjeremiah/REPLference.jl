@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # COMPLEX NUMBERS
 Julia provides a wide range of primitive numeric types, with a full complement of arithmetic

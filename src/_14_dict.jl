@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # DICTS
 In computer science, a *dictionary* is simply a general-purpose data structure for storing a

@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # SETS
 In mathematics, a *set* is the mathematical model for a "collection of different things".

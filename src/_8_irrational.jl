@@ -1,6 +1,4 @@
-include("utility_script.jl")
-
-"""
+@doc raw"""
 # IRRATIONAL NUMBERS
 
 ## What Are Irrational Numbers

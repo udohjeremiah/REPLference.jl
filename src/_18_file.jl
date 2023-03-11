@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # FILES
 In programming, a file is simply a container used for storing data (such as documents,

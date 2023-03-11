@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # TUPLES
 In computer programming, a *tuple* (pronounced **TUH-pul**) is a data structure with the

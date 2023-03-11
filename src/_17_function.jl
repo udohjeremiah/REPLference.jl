@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # FUNCTIONS
 A function in computer programming is simply a block of organized, reusable code that is

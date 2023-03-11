@@ -1,5 +1,3 @@
-`include("utility_script.jl")
-`
 @doc raw"""
 # CHARACTERS
 When we refer to "characters" in computer programming, we are not necessarily limiting our

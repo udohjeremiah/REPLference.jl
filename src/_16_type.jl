@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # TYPES
 When the word **"type"** is mentioned in computer programming, the possible meanings that

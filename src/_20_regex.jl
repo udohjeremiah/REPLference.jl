@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # REGEX
 A regular expression (a.k.a. regex, regexp, r.e.) is a string used to specify a pattern to

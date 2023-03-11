@@ -1,5 +1,3 @@
-include("utility_script.jl")
-
 @doc raw"""
 # OPERATORS
 Julia provides a myriad of operators for mathematical and non-mathematical operations alike

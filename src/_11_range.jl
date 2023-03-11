@@ -1,6 +1,4 @@
-include("utility_script.jl")
-
-"""
+@doc raw"""
 # RANGES
 In statistics, the "range" for a given data set is the difference between the highest and
 lowest values (or observation). For example, if the given data set is `{5, 2, 3, 10, 8}`,
