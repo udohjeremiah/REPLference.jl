@@ -52,8 +52,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `utility_script.jl` file that contains internal functions required for
-          implementing the package.
     - [ ] Generate an `all_names.txt` file that contains a list of all documented names
           (both exported and unexported) in Julia.
     - [ ] Create a `_1_keyword.jl` file that contains a manual about keywords in Julia.
@@ -157,6 +155,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 <details><summary></summary>
 
 - [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [ ] Create the `utility_script.jl` file: [`utility_script.jl-file`](https://github.com/udohjeremiah/REPLference.jl/tree/utility_script.jl-file)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
