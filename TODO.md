@@ -117,7 +117,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Add the `tree` method for displaying the subtypes and supertypes of a name.
 
 - [ ] Create the `test` directory:
-    - [ ] Provide test for the names in `utility_script.jl`.
     - [ ] Provide test for the names in `_1_keyword.jl`.
     - [ ] Provide test for the names in `_2_variable.jl`.
     - [ ] Provide test for the names in `_3_operator.jl`.
@@ -155,6 +154,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 <details><summary></summary>
 
 - [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [ ] Provide test for the names in `utility_script.jl`: [`test-utility_script.jl`](https://github.com/udohjeremiah/REPLference.jl/tree/test-utility_script.jl)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
