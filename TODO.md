@@ -150,9 +150,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `Project.toml` file: [`project.toml-file`](https://github.com/udohjeremiah/REPLference.jl/tree/project.toml-file)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
