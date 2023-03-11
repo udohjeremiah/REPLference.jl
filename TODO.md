@@ -114,7 +114,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Add the `tree` method for displaying the subtypes and supertypes of a name.
 
 - [ ] Create the `test` directory:
-    - [ ] Provide test for the names in `_1_keyword.jl`.
     - [ ] Provide test for the names in `_2_variable.jl`.
     - [ ] Provide test for the names in `_3_operator.jl`.
     - [ ] Provide test for the names in `_4_integer.jl`.
@@ -149,6 +148,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Provide test for the names in `_1_keyword.jl`: [`test-_1_keyword.jl)`](https://github.com/udohjeremiah/REPLference.jl/tree/test-_1_keyword.jl)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
