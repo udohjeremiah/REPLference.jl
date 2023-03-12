@@ -69,9 +69,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Provide test for the names in `REPLference.jl`: [`test-names`](https://github.com/udohjeremiah/REPLference.jl/tree/test-names)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -137,5 +134,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Add the `man`,`fun`, and `tree` functions to the `REPLference.jl` file:
       [`#34`](https://github.com/udohjeremiah/REPLference.jl/pull/34)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Provide test for the names in `REPLference.jl`: [`#37`](https://github.com/udohjeremiah/REPLference.jl/pull/37)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
