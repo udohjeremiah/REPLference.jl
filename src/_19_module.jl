@@ -1007,7 +1007,7 @@ For more information, see
 https://docs.julialang.org/en/v1/manual/modules/#Module-initialization-and-precompilation.
 
 """
-function modules()
+function modules(; extmod=false)
     constants = [
         "Constants" => [
             "DEPOT_PATH", "LOAD_PATH", "VERSION"
