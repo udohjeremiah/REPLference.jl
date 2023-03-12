@@ -69,7 +69,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 <details><summary></summary>
 
-- [ ] Create the `.gitignore` file:
+- [ ] Create the `.gitignore` file: [`gitignore-files`](https://github.com/udohjeremiah/REPLference.jl/tree/gitignore-files)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
