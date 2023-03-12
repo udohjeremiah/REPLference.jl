@@ -68,9 +68,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `.gitignore` file: [`gitignore-files`](https://github.com/udohjeremiah/REPLference.jl/tree/gitignore-files)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -138,5 +135,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [`#34`](https://github.com/udohjeremiah/REPLference.jl/pull/34)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Provide test for the names in `REPLference.jl`: [`#37`](https://github.com/udohjeremiah/REPLference.jl/pull/37)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `.gitignore` file: [`#40`](https://github.com/udohjeremiah/REPLference.jl/pull/40)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
