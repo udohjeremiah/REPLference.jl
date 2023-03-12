@@ -72,11 +72,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-    
-- [ ] Add the `man`,`fun`, and `tree` functions to the `REPLference.jl` file:
-      [`functions-in-replference`](https://github.com/udohjeremiah/REPLference.jl/tree/functions-in-replference)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -139,5 +134,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Add `AbstractTrees.jl` as dependency and create internal functions to display subtypes
       and supertypes: [`#31`](https://github.com/udohjeremiah/REPLference.jl/pull/31)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Add the `man`,`fun`, and `tree` functions to the `REPLference.jl` file:
+      [`#34`](https://github.com/udohjeremiah/REPLference.jl/pull/34)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
