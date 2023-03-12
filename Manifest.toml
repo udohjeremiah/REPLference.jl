@@ -2,7 +2,12 @@
 
 julia_version = "1.9.0-beta4"
 manifest_format = "2.0"
-project_hash = "a66ac63eb5dcaa372f8f1f8a974caa64469cab9e"
+project_hash = "139bf1ed4c64553ab7b80812d80c9270b0cfe8f6"
+
+[[deps.AbstractTrees]]
+git-tree-sha1 = "faa260e4cb5aba097a73fab382dd4b5819d8ec8c"
+uuid = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+version = "0.4.4"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
