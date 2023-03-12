@@ -108,30 +108,24 @@ function man(obj::Symbol)
     # ranges
     elseif match(r"^range"i, str) != nothing
         doc(ranges)
+    # arrays
+    elseif match(r"^array"i, str) != nothing
+        doc(arrays)
+    # tuples
+    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
+        doc(tuples)
+    # dictionaries
+    elseif match(r"^dict"i, str) != nothing
+        doc(dicts)
+    # sets
+    elseif match(r"^set"i, str) != nothing
+        doc(sets)
     # types
     elseif match(r"^(?:type|datatype)"i, str) != nothing
         doc(types)
     # function
     elseif match(r"^(?:function|method|procedure)"i, str) != nothing
         doc(functions)
-    # tuples
-    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
-        doc(tuples)
-    # sets
-    elseif match(r"^set"i, str) != nothing
-        doc(sets)
-    # dictionaries
-    elseif match(r"^dict"i, str) != nothing
-        doc(dicts)
-    # arrays
-    elseif match(r"^array"i, str) != nothing
-        doc(arrays)
-    # random numbers
-    elseif match(r"^rand"i, str) != nothing
-        doc(randoms)
-    # time and date
-    elseif match(r"^(?:time|date)"i, str) != nothing
-        doc(datetime)
     # files
     elseif match(r"^(?:file|io|stream)"i, str) != nothing
         doc(files)
@@ -141,71 +135,77 @@ function man(obj::Symbol)
     # regexes
     elseif match(r"^reg(?:ex|ular)"i, str) != nothing
         doc(regexes)
+    # time and date
+    elseif match(r"^(?:time|date)"i, str) != nothing
+        doc(datetime)
+    # random numbers
+    elseif match(r"^rand"i, str) != nothing
+        doc(randoms)
     end
 end
 
-function fun(obj::Symbol)
+function fun(obj::Symbol; extmod=false)
     str = string(obj)
     # operators
     if match(r"operat(?:or|ion)"i, str) != nothing
-        operators()
+        operators(; extmod=extmod)
     # integers
     elseif match(r"^integer"i, str) != nothing
-        integers()
+        integers(; extmod=extmod)
     # floating points
     elseif match(r"^float"i, str) != nothing
-        floats()
+        floats(; extmod=extmod)
     # complex numbers
     elseif match(r"^complex"i, str) != nothing
-        complexs()
+        complexs(; extmod=extmod)
     # rational numbers
     elseif match(r"^rational"i, str) != nothing
-        rationals()
+        rationals(; extmod=extmod)
     # irrationals
     elseif match(r"^irrational"i, str) != nothing
-        irrationals()
+        irrationals(; extmod=extmod)
     # characters
     elseif match(r"^character"i, str) != nothing
-        characters()
+        characters(; extmod=extmod)
     # strings
     elseif match(r"^string"i, str) != nothing
-        strings()
+        strings(; extmod=extmod)
     # ranges
     elseif match(r"^range"i, str) != nothing
-        ranges()
+        ranges(; extmod=extmod)
+    # arrays
+    elseif match(r"^array"i, str) != nothing
+        arrays(; extmod=extmod)
+    # tuples
+    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
+        tuples(; extmod=extmod)
+    # dictionaries
+    elseif match(r"^dict"i, str) != nothing
+        dicts(; extmod=extmod)
+    # sets
+    elseif match(r"^set"i, str) != nothing
+        sets(; extmod=extmod)
     # types
     elseif match(r"^(?:type|datatype)"i, str) != nothing
         types()
     # function
     elseif match(r"^(?:function|method|procedure)"i, str) != nothing
-        functions()
-    # tuples
-    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
-        tuples()
-    # sets
-    elseif match(r"^set"i, str) != nothing
-        sets()
-    # dictionaries
-    elseif match(r"^dict"i, str) != nothing
-        dicts()
-    # arrays
-    elseif match(r"^array"i, str) != nothing
-        arrays()
-    # random numbers
-    elseif match(r"^rand"i, str) != nothing
-        randoms()
-    # time and date
-    elseif match(r"^(?:time|date)"i, str) != nothing
-        datetime()
+        functions(; extmod=extmod)
     # files
     elseif match(r"^(?:file|io|stream)"i, str) != nothing
-        files()
+        files(; extmod=extmod)
     # modules
     elseif match(r"^(?:module|package)"i, str) != nothing
-        modules()
+        modules(; extmod=extmod)
     # regexes
     elseif match(r"^re(?:gex|gular)"i, str) != nothing
-        regexes()
+        regexes(; extmod=extmod)
+    # time and date
+    elseif match(r"^(?:time|date)"i, str) != nothing
+        datetime(; extmod=extmod)
+    # random numbers
+    elseif match(r"^rand"i, str) != nothing
+        randoms(; extmod=extmod)
     end
 end
 
