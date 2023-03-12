@@ -62,8 +62,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
           the methods that can be called on the topic.
     - [ ] Create a `_27_thread.jl` file that contains a manual about threads in Julia and
           the methods that can be called on the topic.
-    - [ ] Add `AbstractTrees.jl` as a dependency to the package and create an internal
-          function to display the subtypes and supertypes of a name in tree-format.
     
     - [ ] Create the `REPLference.jl` file:
         - [ ] Add the `man` method for retrieving the manual of a name or topic.
@@ -80,6 +78,10 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Add `AbstractTrees.jl` as dependency and create internal functions to display subtypes
+      and supertypes: [`tree-functionality`](https://github.com/udohjeremiah/REPLference.jl/tree/tree-functionality)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
