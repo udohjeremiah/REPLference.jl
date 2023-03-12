@@ -2110,7 +2110,7 @@ long regex (that should possibly span multiple lines to make it more readable).
 |           | comment. Only an actual character with the code value `0x0a`  |
 |           | (the default newline) does so.                                |
 """
-function regexes()
+function regexes(; extmod=false)
     macros = [
         "Macros" => [
             "@assert", "@doc", "@r_str", "@show", "@showtime"
