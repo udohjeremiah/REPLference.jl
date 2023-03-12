@@ -49,7 +49,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
     - [ ] Add badges to the `README.md` file.
 
 - [ ] Create the `./github/workflows` file.
-- [ ] Create the `.gitignore` file.
 
 - [ ] Create the `src` directory:
     - [ ] Create a `_23_metaprogramming.jl` file that contains a manual about
@@ -69,6 +68,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create the `.gitignore` file:
 </details>
 
 ## Done ✓
