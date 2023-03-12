@@ -62,12 +62,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
           the methods that can be called on the topic.
     - [ ] Create a `_27_thread.jl` file that contains a manual about threads in Julia and
           the methods that can be called on the topic.
-    
-    - [ ] Create the `REPLference.jl` file:
-        - [ ] Add the `man` method for retrieving the manual of a name or topic.
-        - [ ] Add the `fun` method for retrieving the functions that can be called on a
-              name or topic.
-        - [ ] Add the `tree` method for displaying the subtypes and supertypes of a name.
 
 - [ ] Create the `test` directory:
     - [ ] Provide test for the names in `REPLference.jl`.
@@ -78,6 +72,11 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+    
+- [ ] Add the `man`,`fun`, and `tree` functions to the `REPLference.jl` file:
+      [`functions-in-replference`](https://github.com/udohjeremiah/REPLference.jl/tree/functions-in-replference)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
