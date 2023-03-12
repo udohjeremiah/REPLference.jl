@@ -63,15 +63,15 @@ To see what's happening in a section, click on the arrow symbol (▶).
     - [ ] Create a `_27_thread.jl` file that contains a manual about threads in Julia and
           the methods that can be called on the topic.
 
-- [ ] Create the `test` directory:
-    - [ ] Provide test for the names in `REPLference.jl`.
-
 - [ ] Register the package and/or release this version.
 </details>
 
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Provide test for the names in `REPLference.jl`: [`test-names`](https://github.com/udohjeremiah/REPLference.jl/tree/test-names)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
