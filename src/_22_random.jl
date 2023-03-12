@@ -144,7 +144,7 @@ from the implementor to support usual types of generated values.
 See https://docs.julialang.org/en/v1/stdlib/Random/#Hooking-into-the-Random-API for the
 "how-to" implementation on these.
 """
-function random(; extmod=false)
+function randoms(; extmod=false)
     methods = [
         "Methods" => [
             "Generating"                             =>[
