@@ -62,9 +62,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Add necessary information about the package in the `README.md` file: [`README-info`](https://github.com/udohjeremiah/REPLference.jl/tree/README-info)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -138,5 +135,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Create the `./github/workflows` file: [`#44`](https://github.com/udohjeremiah/REPLference.jl/pull/44)
       [@udohjeremiah](https://github.com/udohjeremiah)
 - [x] Add badges to the `README.md` file: [`#46`](https://github.com/udohjeremiah/REPLference.jl/pull/46)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Add necessary information about the package in the `README.md` file: [`#50`](https://github.com/udohjeremiah/REPLference.jl/pull/50)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
