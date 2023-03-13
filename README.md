@@ -43,14 +43,14 @@ which can be frustrating for new users. In many OOP languages, users can easily 
 learn new methods to call on an object by using the "dot" syntax in their editor, as shown
 in this example below:
 
-![Python example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/julia_example.png)
+![Python example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/python_example.png)
 
 However, in Julia, this isn't possible because `a.x` refers to the property `x` bundled with
 `a`, not the method `x` bundled with `a` (methods are not bundled with objects in Julia). So
 when users type a.<tab> in the REPL, it will return the properties defined in `a`, as shown
 in this example below:
 
-![Julia example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/python_example.png)
+![Julia example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/julia_example.png)
 
 This limitation often leads to "reinventing the wheel" for those who can write the methods
 they're looking for and a "break in workflow" for those who cannot, as they have to go
