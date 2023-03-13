@@ -47,8 +47,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [ ] Create the `README.md` file:
     - [ ] Add necessary information about the package in the `README.md` file.
 
-- [ ] Create the `./github/workflows` file.
-
 - [ ] Create the `src` directory:
     - [ ] Create a `_23_metaprogramming.jl` file that contains a manual about
           metaprogramming in Julia and the methods that can be called on the topic.
@@ -69,6 +67,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 <details><summary></summary>
 
 - [ ] Add badges to the `README.md` file: [`README-badges`](https://github.com/udohjeremiah/REPLference.jl/tree/README-badges)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [ ] Create the `./github/workflows` file: [`workflows-file`](https://github.com/udohjeremiah/REPLference.jl/tree/workflows-file)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
