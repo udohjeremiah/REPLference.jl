@@ -60,6 +60,7 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
 - [ ] Register the package and/or release this version.
 </details>
 
