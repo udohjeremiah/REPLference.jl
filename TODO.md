@@ -44,6 +44,20 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 <details><summary></summary>
 
+- [ ] Fix the `JuliaFormatter` CI to avoid failing:
+    - Format the code to use `BlueStyle` via `JuliaFormatter.jl`.
+    - Create the `.JuliaFormatter.jl` file and use `BlueStyle`.
+
+- [ ] Complete docstring for the `regexes` method in `src/_20_regex.jl`.
+    - [ ] Provide a section discussing these topics:
+        - [ ] Script Run
+        - [ ] Callouts
+        - [ ] Backtracking Control
+
+- [ ] Complete the docstring for the `files` method in `src/_18_file.jl`.
+    - [ ] Provide a section discussing these topics:
+        - [ ] Changing the access permissions and attributes of a file.
+
 - [ ] Create the `src` directory:
     - [ ] Create a `_23_metaprogramming.jl` file that contains a manual about
           metaprogramming in Julia and the methods that can be called on the topic.
@@ -60,82 +74,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Register the package and/or release this version.
 </details>
 
 ## Done ✓
 
 <details><summary></summary>
-
-- [x] Create the `LICENCE.md` file: [`#6`](https://github.com/udohjeremiah/REPLference.jl/pull/6)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `CITATION.bib` file: [`#9`](https://github.com/udohjeremiah/REPLference.jl/pull/9)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `utility_script.jl` file: [`#13`](https://github.com/udohjeremiah/REPLference.jl/pull/13)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Provide test for the names in `utility_script.jl`: [`#16`](https://github.com/udohjeremiah/REPLference.jl/pull/16)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Generate the `all_names.txt` file: [`19`](https://github.com/udohjeremiah/REPLference.jl/pull/19)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `Project.toml` file: [`#21`](https://github.com/udohjeremiah/REPLference.jl/pull/21)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_2_variable.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_3_operator.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_4_integer.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_5_float.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_6_complex.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_7_rational.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_8_irrational.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_9_character.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_10_string.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_11_range.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_12_array.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_13_tuple.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_14_dict.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_15_set.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_16_type.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_17_function.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_18_file.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_19_module.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_20_regex.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_21_date.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `_22_radom.jl` file: [`#28`](https://github.com/udohjeremiah/REPLference.jl/pull/28)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Add `AbstractTrees.jl` as dependency and create internal functions to display subtypes
-      and supertypes: [`#31`](https://github.com/udohjeremiah/REPLference.jl/pull/31)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Add the `man`,`fun`, and `tree` functions to the `REPLference.jl` file:
-      [`#34`](https://github.com/udohjeremiah/REPLference.jl/pull/34)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Provide test for the names in `REPLference.jl`: [`#37`](https://github.com/udohjeremiah/REPLference.jl/pull/37)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `.gitignore` file: [`#40`](https://github.com/udohjeremiah/REPLference.jl/pull/40)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Create the `./github/workflows` file: [`#44`](https://github.com/udohjeremiah/REPLference.jl/pull/44)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Add badges to the `README.md` file: [`#46`](https://github.com/udohjeremiah/REPLference.jl/pull/46)
-      [@udohjeremiah](https://github.com/udohjeremiah)
-- [x] Add necessary information about the package in the `README.md` file: [`#50`](https://github.com/udohjeremiah/REPLference.jl/pull/50)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
