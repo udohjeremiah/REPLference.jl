@@ -67,7 +67,7 @@ as a dependency to print the sub- and super-types of a type in a tree-like forma
 ## Installing
 To install and use, follow these steps:
 
-```
+```julia
 julia> ] # enters the package mode
 pkg> add REPLference
 
@@ -79,7 +79,7 @@ in every Julia session without having to explicitly call `using REPLference` eac
 the REPL. To do this, simply add the following line to your `~/.julia/config/startup.jl`
 file (if the file does not exist, create it):
 
-```
+```julia
 @eval using REPLference
 ```
 

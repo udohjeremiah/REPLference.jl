@@ -55,13 +55,12 @@ To see what's happening in a section, click on the arrow symbol (▶).
           the methods that can be called on the topic.
     - [ ] Create a `_27_thread.jl` file that contains a manual about threads in Julia and
           the methods that can be called on the topic.
-
-- [ ] Register the package and/or release this version.
 </details>
 
 ## In Progress...
 
 <details><summary></summary>
+- [ ] Register the package and/or release this version.
 </details>
 
 ## Done ✓
