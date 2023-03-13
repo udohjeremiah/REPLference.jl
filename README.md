@@ -39,16 +39,16 @@ Julia's versatile REPL. Instead of searching online or asking basic Julia questi
 elsewhere, beginners can use the rich-feature REPL to learn.
 
 Second, it aims to solve the problem of accessing methods in Julia using the "dot" syntax,
-which can be frustrating for new users. In many OOP languages, users can easily see and
-learn new methods to call on an object by using the "dot" syntax in their editor, as shown
-in this example below:
+which can be frustrating for new users. In many [OOP languages](https://en.wikipedia.org/wiki/Object-oriented_programming),
+users can easily see and learn new methods to call on an object by using the "dot" syntax in
+their editor, as shown in this example below:
 
 ![Python example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/python_example.png)
 
 However, in Julia, this isn't possible because `a.x` refers to the property `x` bundled with
 `a`, not the method `x` bundled with `a` (methods are not bundled with objects in Julia). So
-when users type a.<tab> in the REPL, it will return the properties defined in `a`, as shown
-in this example below:
+when users type `a.<tab>` in the REPL, it will return the properties defined in `a`, as
+shown in this example below:
 
 ![Julia example](https://github.com/udohjeremiah/REPLference.jl/blob/master/assets/julia_example.png)
 
@@ -91,7 +91,7 @@ This package provides three functions, and their usage is explained below.
 ### `man`
 You can think of `man` as a function that returns the manual for a topic or object in Julia.
 
-To see the `man`ual for an object, pass the object to `man`:
+To see the manual for an object, pass the object to `man`:
 
 ```julia
 julia> a = 'J'
@@ -113,7 +113,7 @@ julia> man(a)
   '\ud7ff': Unicode U+D7FF (category Cn: Other, not assigned)
 ```
 
-If you're interested in seeing the `man`ual for a topic, simply pass the topic as a
+If you're interested in seeing the manual for a topic, simply pass the topic as a
 `Symbol`, e.g., `man(:characters)`. If an invalid topic is entered, nothing is printed to
 the screen.
 
@@ -141,7 +141,7 @@ Operators
 ```
 
 You can pass a keyword argument named `extmod::Bool` to the function. The default value for
-extmod is `false`. If extmod is `true`, `fun` prints methods that can be called on the
+`extmod` is `false`. If `extmod` is `true`, `fun` prints methods that can be called on the
 object, as well as methods from modules in the standard library that can be loaded with
 `using` or `import`:
 
@@ -162,9 +162,13 @@ Printf.@sprintf    Printf.PositionCounterˣ    Unicode.isassignedˣ
 Printf.Formatˣ     Printf.Specˣ               Unicode.julia_chartransformˣ
 ```
 
-If you're interested in seeing the `func`tions for a topic, simply pass the topic as a
+If you're interested in seeing the functions for a topic, simply pass the topic as a
 `Symbol`, e.g., `fun(:characters)`. If an invalid topic is entered, nothing is printed to
 the screen.
+
+Names suffixed with `ˣ` are unexported. In cases where they are not qualified with a module,
+they need to be qualified with either `Base`, `Core`, or `InteractiveUtils` for the name to
+be available.
 
 ### `subtree`
 This function prints the subtypes of an object `T` in a tree format. `T` must be a `Type`;
