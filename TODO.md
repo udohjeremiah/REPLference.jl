@@ -46,7 +46,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [ ] Create the `README.md` file:
     - [ ] Add necessary information about the package in the `README.md` file.
-    - [ ] Add badges to the `README.md` file.
 
 - [ ] Create the `./github/workflows` file.
 
@@ -68,6 +67,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Add badges to the `README.md` file: [`README-badges`](https://github.com/udohjeremiah/REPLference.jl/tree/README-badges)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
