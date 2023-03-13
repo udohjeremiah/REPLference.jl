@@ -63,7 +63,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 <details><summary></summary>
 
-- [ ] Add necessary information about the package in the `README.md` file.
+- [ ] Add necessary information about the package in the `README.md` file: [`README-info`](https://github.com/udohjeremiah/REPLference.jl/tree/README-info)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
