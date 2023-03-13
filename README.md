@@ -88,7 +88,7 @@ This package provides three functions, and their usage is explained below.
 
 > NOTE: The examples below will be truncated to keep this README file concise.
 
-#### `man`
+### `man`
 You can think of `man` as a function that returns the manual for a topic or object in Julia.
 
 To see the `man`ual for an object, pass the object to `man`:
@@ -117,7 +117,7 @@ If you're interested in seeing the `man`ual for a topic, simply pass the topic a
 `Symbol`, e.g., `man(:characters)`. If an invalid topic is entered, nothing is printed to
 the screen.
 
-#### `fun`
+### `fun`
 You can think of `fun` as a function that returns the names related to a topic or that can
 be called on a Julia object.
 
@@ -166,7 +166,7 @@ If you're interested in seeing the `func`tions for a topic, simply pass the topi
 `Symbol`, e.g., `fun(:characters)`. If an invalid topic is entered, nothing is printed to
 the screen.
 
-#### `subtree`
+### `subtree`
 This function prints the subtypes of an object `T` in a tree format. `T` must be a `Type`;
 otherwise, an error is thrown.
 
