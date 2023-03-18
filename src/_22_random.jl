@@ -147,26 +147,41 @@ See https://docs.julialang.org/en/v1/stdlib/Random/#Hooking-into-the-Random-API 
 function randoms(; extmod=false)
     methods = [
         "Methods" => [
-            "Generating"                             =>[
-                "Random.bitrand", "Random.randexp", "Random.randexp!", "Random.rand",
-                "Random.rand!", "Random.randn", "Random.randn!", "Random.randstring"
+            "Generating" => [
+                "Random.bitrand",
+                "Random.randexp",
+                "Random.randexp!",
+                "Random.rand",
+                "Random.rand!",
+                "Random.randn",
+                "Random.randn!",
+                "Random.randstring",
             ]
             "Subsequences, Permutations & Shuffling" => [
-                "Random.randcycle", "Random.randcycle!", "Random.randperm",
-                "Random.randperm!", "Random.randsubseq", "Random.randsubseq!",
-                "Random.shuffle", "Random.shuffle!"
+                "Random.randcycle",
+                "Random.randcycle!",
+                "Random.randperm",
+                "Random.randperm!",
+                "Random.randsubseq",
+                "Random.randsubseq!",
+                "Random.shuffle",
+                "Random.shuffle!",
             ]
-            "Others"            => [
-                "Random.default_rngˣ", "Random.ltm52ˣ", "Random.seed!ˣ"
-            ]
-        ]
+            "Others" => ["Random.default_rngˣ", "Random.ltm52ˣ", "Random.seed!ˣ"]
+        ],
     ]
     types = [
         "Types" => [
-            "Random.AbstractRNG", "Random.MersenneTwister", "Random.RandomDevice",
-            "Random.SamplerSimpleˣ", "Random.SamplerTrivialˣ", "Random.SamplerTypeˣ",
-            "Random.Samplerˣ", "Random.TaskLocalRNG", "Random.Xoshiro"
-        ]
+            "Random.AbstractRNG",
+            "Random.MersenneTwister",
+            "Random.RandomDevice",
+            "Random.SamplerSimpleˣ",
+            "Random.SamplerTrivialˣ",
+            "Random.SamplerTypeˣ",
+            "Random.Samplerˣ",
+            "Random.TaskLocalRNG",
+            "Random.Xoshiro",
+        ],
     ]
-    _print_names(methods, types)
+    return _print_names(methods, types)
 end

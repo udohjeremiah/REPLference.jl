@@ -2111,39 +2111,44 @@ long regex (that should possibly span multiple lines to make it more readable).
 |           | (the default newline) does so.                                |
 """
 function regexes(; extmod=false)
-    macros = [
-        "Macros" => [
-            "@assert", "@doc", "@r_str", "@show", "@showtime"
-        ]
-    ]
+    macros = ["Macros" => ["@assert", "@doc", "@r_str", "@show", "@showtime"]]
     methods = [
         "Methods" => [
-            "Match"         => [
-                "eachmatch", "match"
+            "Match" => ["eachmatch", "match"],
+            "Search & Find" =>
+                ["count", "findall", "findfirst", "findlast", "findnext", "findprev"],
+            "True/False" => ["endswith", "ifelse", "isa", "isbits", "occursin"],
+            "Others" => [
+                "apropos",
+                "display",
+                "dump",
+                "getfield",
+                "getproperty",
+                "identity",
+                "keys",
+                "notnothingˣ",
+                "objectid",
+                "popdisplay",
+                "print",
+                "println",
+                "printstyled",
+                "propertynames",
+                "redisplay",
+                "repr",
+                "show",
+                "string",
+                "summary",
+                "summarysizeˣ",
+                "typeassert",
+                "typeof",
             ],
-            "Search & Find" => [
-                "count", "findall", "findfirst", "findlast", "findnext", "findprev"
-            ],
-            "True/False"    => [
-                "endswith", "ifelse", "isa", "isbits", "occursin"
-            ],
-            "Others"        => [
-                "apropos", "display", "dump", "getfield", "getproperty", "identity", "keys",
-                "notnothingˣ", "objectid", "popdisplay", "print", "println", "printstyled",
-                "propertynames", "redisplay", "repr", "show", "string", "summary",
-                "summarysizeˣ", "typeassert", "typeof"
-            ],
-        ]
+        ],
     ]
     types = [
-        "Types" => [
-            "AbstractMatch", "AbstractPattern", "DataType", "Regex", "RegexMatch"
-        ]
+        "Types" => ["AbstractMatch", "AbstractPattern", "DataType", "Regex", "RegexMatch"]
     ]
     operators = [
-        "Operators" => [
-            "!", "!=", "!==", "*", "==", "=>", "^", "≠", "≡", "≢", "==="
-        ]
+        "Operators" => ["!", "!=", "!==", "*", "==", "=>", "^", "≠", "≡", "≢", "==="]
     ]
-    _print_names(macros, methods, types, operators)
+    return _print_names(macros, methods, types, operators)
 end

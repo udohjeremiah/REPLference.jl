@@ -912,88 +912,230 @@ with special file streaming I/O objects, such as terminals, pipes, and TCP socke
 function files(; extmod=false)
     constants = [
         "Constants" => [
-            "DEPOT_PATH", "DL_LOAD_PATHˣ", "ENDIAN_BOM", "LOAD_PATH", "devnull", "stdin",
-            "stdout"
-        ]
+            "DEPOT_PATH",
+            "DL_LOAD_PATHˣ",
+            "ENDIAN_BOM",
+            "LOAD_PATH",
+            "devnull",
+            "stdin",
+            "stdout",
+        ],
     ]
     macros = [
         "Macros" => [
-            "@MIME_str", "@__DIR__", "@__FILE__", "@__LINE__", "@assert", "@doc", "@show",
-            "@showtime", "@simd"
-        ]
+            "@MIME_str",
+            "@__DIR__",
+            "@__FILE__",
+            "@__LINE__",
+            "@assert",
+            "@doc",
+            "@show",
+            "@showtime",
+            "@simd",
+        ],
     ]
     methods = [
         "Methods" => [
-            "Directories"      => [
-                "cd", "dirname", "homedir", "mkdir", "mkpath", "mktemp", "mktempdir", "pwd",
-                "readdir", "splitdir", "walkdir"
+            "Directories" => [
+                "cd",
+                "dirname",
+                "homedir",
+                "mkdir",
+                "mkpath",
+                "mktemp",
+                "mktempdir",
+                "pwd",
+                "readdir",
+                "splitdir",
+                "walkdir",
             ],
-            "File Handling"    => [
-                "close", "cp", "eachline", "mv", "open", "open_flagsˣ", "read", "readchomp",
-                "readeach", "readline", "readlines", "readuntil", "touch", "truncate",
-                "write"
+            "File Handling" => [
+                "close",
+                "cp",
+                "eachline",
+                "mv",
+                "open",
+                "open_flagsˣ",
+                "read",
+                "readchomp",
+                "readeach",
+                "readline",
+                "readlines",
+                "readuntil",
+                "touch",
+                "truncate",
+                "write",
             ],
-            "File Path"       => [
-                "abspath", "active_projectˣ", "basename", "contractuser", "edit",
-                "evalfile", "expanduser", "hardlink", "include_dependency",
-                "include_string", "includeˣ", "joinpath", "less", "normpath", "readlink",
-                "realpath", "relpath", "rm", "samefile", "set_active_projectˣ",
-                "splitdrive", "splitext", "splitpath", "symlink", "tempdir", "tempname"
+            "File Path" => [
+                "abspath",
+                "active_projectˣ",
+                "basename",
+                "contractuser",
+                "edit",
+                "evalfile",
+                "expanduser",
+                "hardlink",
+                "include_dependency",
+                "include_string",
+                "includeˣ",
+                "joinpath",
+                "less",
+                "normpath",
+                "readlink",
+                "realpath",
+                "relpath",
+                "rm",
+                "samefile",
+                "set_active_projectˣ",
+                "splitdrive",
+                "splitext",
+                "splitpath",
+                "symlink",
+                "tempdir",
+                "tempname",
             ],
-            "File/Path Info"        => [
-                "ctime", "diskstat", "lstat", "mtime", "stat"
+            "File/Path Info" => ["ctime", "diskstat", "lstat", "mtime", "stat"],
+            "File Permissions" =>
+                ["chmod", "chown", "filemode", "filesize", "gperm", "uperm"],
+            "IO" => [
+                "alignmentˣ",
+                "bytes2hex",
+                "bytesavailable",
+                "code_llvm",
+                "code_native",
+                "code_warntype",
+                "countlines",
+                "displaysize",
+                "eof",
+                "escape_string",
+                "fd",
+                "fdio",
+                "flush",
+                "getpassˣ",
+                "isopen",
+                "join",
+                "print",
+                "print_matrix_rowˣ",
+                "print_matrix_vdotsˣ",
+                "print_matrixˣ",
+                "print_statement_costsˣ",
+                "println",
+                "printstyled",
+                "readavailable",
+                "redirect_stderr",
+                "redirect_stdin",
+                "redirect_stdio",
+                "redirect_stdout",
+                "reset",
+                "shell_escape_cshˣ",
+                "shell_escape_wincmdˣ",
+                "show",
+                "showargˣ",
+                "showerror",
+                "skip",
+                "sprint",
+                "take!",
+                "unescape_string",
+                "unsafe_read",
+                "unsafe_write",
+                "apropos",
+                "versioninfo",
             ],
-            "File Permissions" => [
-                "chmod", "chown", "filemode", "filesize", "gperm", "uperm"
+            "Stream Position" => [
+                "mark",
+                "peek",
+                "position",
+                "seek",
+                "seekend",
+                "seekstart",
+                "skipchars",
+                "unmark",
             ],
-            "IO"               => [
-                "alignmentˣ", "bytes2hex", "bytesavailable", "code_llvm", "code_native",
-                "code_warntype", "countlines", "displaysize", "eof", "escape_string", "fd",
-                "fdio", "flush", "getpassˣ", "isopen", "join", "print", "print_matrix_rowˣ",
-                "print_matrix_vdotsˣ", "print_matrixˣ","print_statement_costsˣ", "println",
-                "printstyled", "readavailable", "redirect_stderr", "redirect_stdin",
-                "redirect_stdio", "redirect_stdout", "reset", "shell_escape_cshˣ",
-                "shell_escape_wincmdˣ", "show", "showargˣ", "showerror", "skip", "sprint",
-                "take!", "unescape_string", "unsafe_read", "unsafe_write", "apropos",
-                "versioninfo"
+            "True/False" => [
+                "__precompile__",
+                "isa",
+                "isabspath",
+                "isblockdev",
+                "ischardev",
+                "isdir",
+                "isdirpath",
+                "isfifo",
+                "isfile",
+                "islink",
+                "ismarked",
+                "ismount",
+                "ispath",
+                "isreadable",
+                "isreadonly",
+                "issetgid",
+                "issetuid",
+                "issocket",
+                "issticky",
+                "istextmime",
+                "iswritable",
             ],
-            "Stream Position"  => [
-                "mark", "peek", "position", "seek", "seekend", "seekstart", "skipchars",
-                "unmark"
+            "Others" => [
+                "PipeBuffer",
+                "SecretBuffer!ˣ",
+                "closewrite",
+                "define_editorˣ",
+                "display",
+                "download",
+                "dump",
+                "enumerate",
+                "htol",
+                "hton",
+                "ltoh",
+                "ntoh",
+                "operm",
+                "pipeline",
+                "popdisplay",
+                "promptˣ",
+                "pushdisplay",
+                "read!",
+                "readbytes!",
+                "redisplay",
+                "repr",
+                "typeassert",
+                "typeof",
             ],
-            "True/False"       => [
-                "__precompile__", "isa", "isabspath", "isblockdev", "ischardev", "isdir",
-                "isdirpath", "isfifo", "isfile", "islink", "ismarked", "ismount", "ispath",
-                "isreadable", "isreadonly", "issetgid", "issetuid", "issocket", "issticky",
-                "istextmime", "iswritable",
-            ],
-            "Others"           => [
-                "PipeBuffer", "SecretBuffer!ˣ", "closewrite", "define_editorˣ", "display",
-                "download", "dump", "enumerate", "htol", "hton", "ltoh", "ntoh", "operm",
-                "pipeline", "popdisplay", "promptˣ", "pushdisplay", "read!", "readbytes!",
-                "redisplay", "repr", "typeassert", "typeof"
-            ]
-        ]
+        ],
     ]
     types = [
         "Types" => [
-            "AbstractDisplay", "AbstractPipeˣ", "DataType", "HTML", "IOBuffer",
-            "IOContext", "IOStream", "LibuvServerˣ", "LibuvStreamˣ", "MIME", "OS_HANDLEˣ",
-            "RawFD", "SecretBufferˣ", "SpawnIOsˣ", "StdIOSetˣ", "Text", "TextDisplay",
-            "text_colors"
-        ]
+            "AbstractDisplay",
+            "AbstractPipeˣ",
+            "DataType",
+            "HTML",
+            "IOBuffer",
+            "IOContext",
+            "IOStream",
+            "LibuvServerˣ",
+            "LibuvStreamˣ",
+            "MIME",
+            "OS_HANDLEˣ",
+            "RawFD",
+            "SecretBufferˣ",
+            "SpawnIOsˣ",
+            "StdIOSetˣ",
+            "Text",
+            "TextDisplay",
+            "text_colors",
+        ],
     ]
-    operators = [
-        "Operators" => [
-            "!", "!=", "!==", "==", "=>", "≡", "≢", "==="
-        ]
-    ]
+    operators = ["Operators" => ["!", "!=", "!==", "==", "=>", "≡", "≢", "==="]]
     stdlib = [
         "Stdlib" => [
-            "Base64.Base64DecodePipe", "Base64.Base64EncodePipe", "Base64.base64encode",
-            "Printf.@printf","Printf.Formatˣ", "Printf.Pointerˣ", "Printf.PositionCounterˣ",
-            "Printf.Specˣ",  "Printf.formatˣ",
-        ]
+            "Base64.Base64DecodePipe",
+            "Base64.Base64EncodePipe",
+            "Base64.base64encode",
+            "Printf.@printf",
+            "Printf.Formatˣ",
+            "Printf.Pointerˣ",
+            "Printf.PositionCounterˣ",
+            "Printf.Specˣ",
+            "Printf.formatˣ",
+        ],
     ]
     _print_names(constants, macros, methods, types, operators)
     if extmod == true
