@@ -36,8 +36,9 @@ function _names_to_dict()
                     line,
                 )
                 if !in([m, line_match["name"]], forbidden_names)
-                    docstring =
-                        string(Docs.doc(Docs.Binding(m, Symbol(line_match["name"]))))
+                    docstring = string(
+                        Docs.doc(Docs.Binding(m, Symbol(line_match["name"])))
+                    )
                 else
                     docstring = ""
                 end
@@ -73,8 +74,9 @@ function _names_to_dict()
                         end
                     else
                         doc1 = string(Docs.doc(Docs.Binding(m, Symbol(line_match["name"]))))
-                        doc2 =
-                            string(Docs.doc(Docs.Binding(m, Symbol(line_match["summary"]))))
+                        doc2 = string(
+                            Docs.doc(Docs.Binding(m, Symbol(line_match["summary"])))
+                        )
                         if doc1 != doc2
                             push!(names_dict[:Constants], string(m, '.', name))
                         end

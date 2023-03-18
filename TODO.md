@@ -70,10 +70,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `.JuliaFormatter.jl` file and use `BlueStyle`:
-      [fix-ci-failure](https://github.com/udohjeremiah/REPLference.jl/tree/fix-ci-failure)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -82,5 +78,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [x] Format the code to use `BlueStyle` via `JuliaFormatter.jl`:
       [`#57`](https://github.com/udohjeremiah/REPLference.jl/pull/57)
+      [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `.JuliaFormatter.jl` file and use `BlueStyle`:
+      [`#60`](https://github.com/udohjeremiah/REPLference.jl/pull/60)
       [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
