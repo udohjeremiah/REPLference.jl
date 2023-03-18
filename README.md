@@ -16,13 +16,14 @@
             <a href="https://img.shields.io/github/repo-size/udohjeremiah/REPLference.jl"><img src="https://img.shields.io/github/repo-size/udohjeremiah/REPLference.jl"/></a>
             <a href="https://github.com/udohjeremiah/REPLference.jl/actions/workflows/CI.yml"><img src="https://github.com/udohjeremiah/REPLference.jl/actions/workflows/CI.yml/badge.svg?branch=master"/></a>
             <a href="https://codecov.io/gh/udohjeremiah/REPLference.jl/branch/master"><img src="https://codecov.io/gh/udohjeremiah/REPLference.jl/branch/master/graph/badge.svg"/></a>
+            <a href="https://juliahub.com/ui/Packages/REPLference/Dr7LK"><img src="https://juliahub.com/docs/REPLference/version.svg"/></a>
         </td>
     </tr>
     <!-- Contributions -->
     <tr>
         <td>Contributing</td>
         <td>
-            <a href="https://github.com/udohjeremiah/Continuous-Release-Workflow"><img src="https://img.shields.io/badge/Git%20Workflow-Continuous--Release-F05032?logo=git&logoColor=red"/></a>
+            <a href="https://github.com/udohjeremiah/Git-Plus-Hub-Flow"><img src="https://img.shields.io/badge/Workflow-Git+Hub%20Flow-F05032?logo=git&logoColor=red"/></a>
             <a href="https://github.com/SciML/ColPrac"><img src="https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet"/></a>
             <a href="https://github.com/invenia/BlueStyle"><img src="https://img.shields.io/badge/Code%20Style-blue-4495d1.svg"/></a>
             <a href="https://github.com/udohjeremiah/REPLference.jl/blob/master/TODO.md"><img src="https://img.shields.io/badge/Tasks-TODO.md-E44332?logo=todoist&logoColor=white"/></a>
