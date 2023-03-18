@@ -74,9 +74,9 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 <details><summary></summary>
 
-- Format the code to use `BlueStyle` via `JuliaFormatter.jl`:
-  [format-code](https://github.com/udohjeremiah/REPLference.jl/tree/format-code)
-  [@udohjeremiah](https://github.com/udohjeremiah)
+- [ ] Format the code to use `BlueStyle` via `JuliaFormatter.jl`:
+      [format-code](https://github.com/udohjeremiah/REPLference.jl/tree/format-code)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
