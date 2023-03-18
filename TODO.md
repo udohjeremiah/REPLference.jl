@@ -55,8 +55,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Changing the access permissions and attributes of a file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `_23_metaprogramming.jl` file that contains a manual about
-          metaprogramming in Julia and the methods that can be called on the topic.
     - [ ] Create a `_24_error.jl` file that contains a manual about error handling in Julia
           and the methods that can be called on the topic.
     - [ ] Create a `_25_pointer.jl` file that contains a manual about pointers in Julia and
@@ -70,6 +68,10 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create the `_23_metaprogramming.jl` file:
+      [`metaprogramming`](https://github.com/udohjeremiah/REPLference.jl/tree/metaprogramming)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
