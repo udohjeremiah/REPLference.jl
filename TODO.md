@@ -73,13 +73,13 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Format the code to use `BlueStyle` via `JuliaFormatter.jl`:
-      [format-code](https://github.com/udohjeremiah/REPLference.jl/tree/format-code)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
 
 <details><summary></summary>
+
+- [x] Format the code to use `BlueStyle` via `JuliaFormatter.jl`:
+      [`#57`](https://github.com/udohjeremiah/REPLference.jl/pull/57)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
