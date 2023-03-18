@@ -44,9 +44,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 <details><summary></summary>
 
-- [ ] Fix the `JuliaFormatter` CI to avoid failing:
-    - Create the `.JuliaFormatter.jl` file and use `BlueStyle`.
-
 - [ ] Complete docstring for the `regexes` method in `src/_20_regex.jl`.
     - [ ] Provide a section discussing these topics:
         - [ ] Script Run
@@ -73,6 +70,10 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
+
+- [ ] Create the `.JuliaFormatter.jl` file and use `BlueStyle`:
+      [fix-ci-failure](https://github.com/udohjeremiah/REPLference.jl/tree/fix-ci-failure)
+      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
