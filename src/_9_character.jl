@@ -148,58 +148,139 @@ julia> '\UD7FF'
 '\ud7ff': Unicode U+D7FF (category Cn: Other, not assigned)
 ```
 """
-function characters(;extmod=false)
-    macros = [
-        "Macros" => [
-            "@assert", "@doc", "@show", "@showtime"
-        ]
-    ]
+function characters(; extmod=false)
+    macros = ["Macros" => ["@assert", "@doc", "@show", "@showtime"]]
     methods = [
         "Methods" => [
-            "Mathematical"    => [
-                "canonicalize2ˣ", "cmp", "count", "max", "min", "minmax"
-            ],
-            "Search & Find"         => [
-                "findall", "findfirst", "findlast", "findnext", "findprev"
-            ],
-            "True/False"      => [
-                "ifelse", "in", "isascii", "isbits", "iscntrl", "isdigit", "isequal",
-                "isless", "isletter", "islowercase", "ismalformedˣ", "ismutable",
-                "isnumeric", "isoverlongˣ", "isprint", "ispunct", "isspace", "isunordered",
-                "isuppercase", "isvalid", "isxdigit",
+            "Mathematical" =>
+                ["canonicalize2ˣ", "cmp", "count", "max", "min", "minmax"],
+            "Search & Find" =>
+                ["findall", "findfirst", "findlast", "findnext", "findprev"],
+            "True/False" => [
+                "ifelse",
+                "in",
+                "isascii",
+                "isbits",
+                "iscntrl",
+                "isdigit",
+                "isequal",
+                "isless",
+                "isletter",
+                "islowercase",
+                "ismalformedˣ",
+                "ismutable",
+                "isnumeric",
+                "isoverlongˣ",
+                "isprint",
+                "ispunct",
+                "isspace",
+                "isunordered",
+                "isuppercase",
+                "isvalid",
+                "isxdigit",
             ],
             "Type-Conversion" => [
-                "cconvertˣ", "collect", "convert", "isa", "oftype", "parse", "promote",
-                "string", "unsafe_convertˣ"
+                "cconvertˣ",
+                "collect",
+                "convert",
+                "isa",
+                "oftype",
+                "parse",
+                "promote",
+                "string",
+                "unsafe_convertˣ",
             ],
-            "Others"          => [
-                "bitstring", "codepoint", "decode_overlongˣ", "display", "dump", "identity",
-                "join", "lowercase", "lpad", "ncodeunits", "only", "print", "println",
-                "printstyled", "redisplay", "repeat", "repr", "rpad", "show",
-                "show_invalidˣ", "sizeof", "summary", "summarysizeˣ", "textwidth",
-                "titlecase", "typeassert", "typeof", "uppercase"
-            ]
-        ]
+            "Others" => [
+                "bitstring",
+                "codepoint",
+                "decode_overlongˣ",
+                "display",
+                "dump",
+                "identity",
+                "join",
+                "lowercase",
+                "lpad",
+                "ncodeunits",
+                "only",
+                "print",
+                "println",
+                "printstyled",
+                "redisplay",
+                "repeat",
+                "repr",
+                "rpad",
+                "show",
+                "show_invalidˣ",
+                "sizeof",
+                "summary",
+                "summarysizeˣ",
+                "textwidth",
+                "titlecase",
+                "typeassert",
+                "typeof",
+                "uppercase",
+            ],
+        ],
     ]
     types = [
         "Types" => [
-            "AbstractChar", "Cchar", "Char", "Cuchar", "Cwchar_t", "DataType", "Ref",
+            "AbstractChar",
+            "Cchar",
+            "Char",
+            "Cuchar",
+            "Cwchar_t",
+            "DataType",
+            "Ref",
             "Pair",
-        ]
+        ],
     ]
     operators = [
         "Operators" => [
-            "!", "!=", "!==", "*", "+", "-", "<", "<=", "==", "=>", ">", ">=", "^", "∈",
-            "∉", "∋", "∌", "∩", "∪", "≠", "≡", "≢", "≤", "≥", "⊆", "⊇", "⊈", "⊉", "⊊", "⊋",
-            "==="
-        ]
+            "!",
+            "!=",
+            "!==",
+            "*",
+            "+",
+            "-",
+            "<",
+            "<=",
+            "==",
+            "=>",
+            ">",
+            ">=",
+            "^",
+            "∈",
+            "∉",
+            "∋",
+            "∌",
+            "∩",
+            "∪",
+            "≠",
+            "≡",
+            "≢",
+            "≤",
+            "≥",
+            "⊆",
+            "⊇",
+            "⊈",
+            "⊉",
+            "⊊",
+            "⊋",
+            "===",
+        ],
     ]
     stdlib = [
         "Stdlib" => [
-            "Printf.@printf", "Printf.@sprintf", "Printf.Formatˣ", "Printf.Pointerˣ",
-            "Printf.PositionCounterˣ", "Printf.Specˣ", "Printf.formatˣ",
-            "Unicode.isassignedˣ", "Unicode.julia_chartransformˣ"
-        ]
+            "Printf.@printf",
+            "Printf.@sprintf",
+            "Printf.Formatˣ",
+            "Printf.Pointerˣ",
+            "Printf.PositionCounterˣ",
+            "Printf.Specˣ",
+            "Printf.formatˣ",
+            "Unicode.isassignedˣ",
+            "Unicode.julia_chartransformˣ",
+        ],
     ]
     _print_names(macros, methods, types, operators)
     if extmod == true

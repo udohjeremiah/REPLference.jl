@@ -1008,42 +1008,56 @@ https://docs.julialang.org/en/v1/manual/modules/#Module-initialization-and-preco
 
 """
 function modules(; extmod=false)
-    constants = [
-        "Constants" => [
-            "DEPOT_PATH", "LOAD_PATH", "VERSION"
-        ]
-    ]
-    macros = [
-        "Macros" => [
-            "@__MODULE__", "@assert", "@doc", "@eval", "@time_imports"
-        ]
-    ]
+    constants = ["Constants" => ["DEPOT_PATH", "LOAD_PATH", "VERSION"]]
+    macros = ["Macros" => ["@__MODULE__", "@assert", "@doc", "@eval", "@time_imports"]]
     methods = [
         "Methods" => [
-            "True/False" => [
-                "__precompile__", "isa", "isconst", "isdefined"
+            "True/False" => ["__precompile__", "isa", "isconst", "isdefined"],
+            "Others" => [
+                "compilecacheˣ",
+                "display",
+                "dump",
+                "edit",
+                "eval",
+                "fullname",
+                "get_extensionˣ",
+                "getglobal",
+                "getproperty",
+                "identify_package_envˣ",
+                "identify_packageˣ",
+                "identity",
+                "include_string",
+                "includeˣ",
+                "load_pathˣ",
+                "locate_packageˣ",
+                "methods",
+                "methodswith",
+                "modulerootˣ",
+                "nameof",
+                "names",
+                "objectid",
+                "parentmodule",
+                "pathof",
+                "pkgdir",
+                "pkgversion",
+                "print",
+                "println",
+                "printstyled",
+                "redisplay",
+                "repr",
+                "requireˣ",
+                "setglobal!",
+                "show",
+                "string",
+                "summary",
+                "typeassert",
+                "typeof",
+                "varinfo",
+                "which",
             ],
-            "Others"     => [
-                "compilecacheˣ", "display", "dump", "edit", "eval", "fullname",
-                "get_extensionˣ", "getglobal", "getproperty", "identify_package_envˣ",
-                "identify_packageˣ", "identity", "include_string", "includeˣ", "load_pathˣ",
-                "locate_packageˣ", "methods", "methodswith", "modulerootˣ", "nameof",
-                "names", "objectid", "parentmodule", "pathof", "pkgdir", "pkgversion",
-                "print", "println", "printstyled", "redisplay", "repr", "requireˣ",
-                "setglobal!", "show", "string", "summary", "typeassert", "typeof",
-                "varinfo", "which"
-            ]
-        ]
+        ],
     ]
-    types = [
-        "Types" => [
-            "DataType", "Module"
-        ]
-    ]
-    operators = [
-        "Operators" => [
-            "!", "!=", "!==", "==", "=>", "≠", "≡", "≢", "==="
-        ]
-    ]
-    _print_names(constants, macros, methods, types, operators)
+    types = ["Types" => ["DataType", "Module"]]
+    operators = ["Operators" => ["!", "!=", "!==", "==", "=>", "≠", "≡", "≢", "==="]]
+    return _print_names(constants, macros, methods, types, operators)
 end

@@ -208,79 +208,201 @@ julia> a === b
 false
 ```
 """
-function sets(;extmod=false)
-    constants = [
-        "Constants" => [
-            "missing", "nothing"
-        ]
-    ]
+function sets(; extmod=false)
+    constants = ["Constants" => ["missing", "nothing"]]
     macros = [
         "Macros" => [
-            "@assert", "@boundscheck", "@coalesce", "@show", "@showtime", "@simd",
-            "@something"
-        ]
+            "@assert",
+            "@boundscheck",
+            "@coalesce",
+            "@show",
+            "@showtime",
+            "@simd",
+            "@something",
+        ],
     ]
     methods = [
         "Methods" => [
-            "In-Place"          => [
-                "copy!", "delete!", "empty!", "filter!", "intersect!", "pop!", "popfirst!",
-                "push!", "replace!", "setdiff!", "sizehint!", "symdiff!", "union!"
+            "In-Place" => [
+                "copy!",
+                "delete!",
+                "empty!",
+                "filter!",
+                "intersect!",
+                "pop!",
+                "popfirst!",
+                "push!",
+                "replace!",
+                "setdiff!",
+                "sizehint!",
+                "symdiff!",
+                "union!",
             ],
-            "Loop"              => [
-                "enumerate", "foreach", "pairs", "zip"
+            "Loop" => ["enumerate", "foreach", "pairs", "zip"],
+            "Mathematical" => [
+                "accumulate",
+                "cumprod",
+                "cumsum",
+                "extrema",
+                "intersect",
+                "maximum",
+                "minimum",
+                "prod",
+                "setdiff",
+                "sum",
+                "symdiff",
+                "union",
+                "unique",
             ],
-            "Mathematical"      => [
-                "accumulate", "cumprod", "cumsum", "extrema", "intersect", "maximum",
-                "minimum", "prod", "setdiff", "sum", "symdiff", "union", "unique"
+            "Missing & Nothing" =>
+                ["coalesce", "notnothingˣ", "skipmissing", "something"],
+            "Reduce" => [
+                "add_sumˣ",
+                "foldl",
+                "mapfoldl",
+                "mapreduce",
+                "mapreduce_emptyˣ",
+                "mapreduce_firstˣ",
+                "mul_prodˣ",
+                "reduce",
+                "reduce_emptyˣ",
+                "reduce_firstˣ",
             ],
-            "Missing & Nothing" => [
-                "coalesce", "notnothingˣ", "skipmissing", "something"
+            "Search & Find" => ["count", "filter"],
+            "True/False" => [
+                "all",
+                "allequal",
+                "allunique",
+                "any",
+                "hasfastinˣ",
+                "hasproperty",
+                "ifelse",
+                "in",
+                "isa",
+                "isbits",
+                "isdefined",
+                "isdisjoint",
+                "isdoneˣ",
+                "isempty",
+                "isequal",
+                "isgreaterˣ",
+                "ismissing",
+                "ismutable",
+                "isnothing",
+                "issetequal",
+                "issubset",
+                "isunordered",
+                "promote",
             ],
-            "Reduce"            => [
-                "add_sumˣ", "foldl", "mapfoldl", "mapreduce", "mapreduce_emptyˣ",
-                "mapreduce_firstˣ", "mul_prodˣ", "reduce", "reduce_emptyˣ", "reduce_firstˣ",
+            "Type-Conversion" =>
+                ["cconvertˣ", "collect", "convert", "oftype", "string"],
+            "Others" => [
+                "broadcast",
+                "bytes2hex",
+                "checked_lengthˣ",
+                "copy",
+                "copymutableˣ",
+                "deepcopy",
+                "display",
+                "dump",
+                "eltype",
+                "empty",
+                "first",
+                "getfield",
+                "getproperty",
+                "hash",
+                "identity",
+                "iterate",
+                "join",
+                "length",
+                "nfields",
+                "objectid",
+                "only",
+                "print",
+                "println",
+                "printstyled",
+                "propertynames",
+                "redisplay",
+                "replace",
+                "repr",
+                "restˣ",
+                "show",
+                "sizeof",
+                "split_restˣ",
+                "stack",
+                "summary",
+                "summarysizeˣ",
+                "typeassert",
+                "typeof",
+                "values",
             ],
-            "Search & Find"     => [
-                "count", "filter"
-            ],
-            "True/False"        => [
-                "all", "allequal", "allunique", "any", "hasfastinˣ", "hasproperty",
-                "ifelse", "in", "isa", "isbits", "isdefined", "isdisjoint", "isdoneˣ",
-                "isempty", "isequal", "isgreaterˣ", "ismissing", "ismutable", "isnothing",
-                "issetequal", "issubset", "isunordered", "promote"
-            ],
-            "Type-Conversion"   => [
-                "cconvertˣ", "collect", "convert", "oftype", "string"
-            ],
-            "Others"            => [
-                "broadcast", "bytes2hex", "checked_lengthˣ", "copy", "copymutableˣ",
-                "deepcopy", "display", "dump", "eltype", "empty", "first", "getfield",
-                "getproperty", "hash", "identity", "iterate", "join", "length", "nfields",
-                "objectid", "only", "print", "println", "printstyled", "propertynames",
-                "redisplay", "replace", "repr", "restˣ", "show", "sizeof", "split_restˣ",
-                "stack", "summary", "summarysizeˣ", "typeassert", "typeof", "values"
-            ]
-        ]
+        ],
     ]
     types = [
         "Types" => [
-            "AbstractSet", "BitSet", "Cvoid", "DataType", "Generatorˣ", "IteratorEltypeˣ",
-            "IteratorSizeˣ", "Missing", "Nothing", "Ref", "Pair", "Set", "Some"
-        ]
+            "AbstractSet",
+            "BitSet",
+            "Cvoid",
+            "DataType",
+            "Generatorˣ",
+            "IteratorEltypeˣ",
+            "IteratorSizeˣ",
+            "Missing",
+            "Nothing",
+            "Ref",
+            "Pair",
+            "Set",
+            "Some",
+        ],
     ]
     operators = [
         "Operators" => [
-            "!", "!=", "!==", "<", "<=", "==", "=>", ">", ">=", "∈", "∉", "∋", "∌", "∩",
-            "∪", "≠", "≡", "≢", "≤", "≥", "⊆", "⊇", "⊈", "⊉", "⊊", "⊋", "==="
-        ]
+            "!",
+            "!=",
+            "!==",
+            "<",
+            "<=",
+            "==",
+            "=>",
+            ">",
+            ">=",
+            "∈",
+            "∉",
+            "∋",
+            "∌",
+            "∩",
+            "∪",
+            "≠",
+            "≡",
+            "≢",
+            "≤",
+            "≥",
+            "⊆",
+            "⊇",
+            "⊈",
+            "⊉",
+            "⊊",
+            "⊋",
+            "===",
+        ],
     ]
     stdlib = [
         "Stdlib" => [
-            "Printf.@printf", "Printf.@sprintf", "Printf.Formatˣ", "Printf.Pointerˣ",
-            "Printf.PositionCounterˣ", "Printf.Specˣ", "Printf.formatˣ", "Statistics.mean",
-            "Statistics.median", "Statistics.quantile", "Statistics.std", "Statistics.stdm",
-            "Statistics.var", "Statistics.varm"
-        ]
+            "Printf.@printf",
+            "Printf.@sprintf",
+            "Printf.Formatˣ",
+            "Printf.Pointerˣ",
+            "Printf.PositionCounterˣ",
+            "Printf.Specˣ",
+            "Printf.formatˣ",
+            "Statistics.mean",
+            "Statistics.median",
+            "Statistics.quantile",
+            "Statistics.std",
+            "Statistics.stdm",
+            "Statistics.var",
+            "Statistics.varm",
+        ],
     ]
     _print_names(constants, macros, methods, types, operators)
     if extmod == true
