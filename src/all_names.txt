@@ -3,6 +3,18 @@ To generate this file run the `_print_dict_to_dest` method in the `utility_scrip
 ==========================================================================================#
 
 # Methods
+Base.Meta.isbinaryoperator
+Base.Meta.isexpr
+Base.Meta.isidentifier
+Base.Meta.isoperator
+Base.Meta.ispostfixoperator
+Base.Meta.isunaryoperator
+Base.Meta.lowerˣ
+Base.Meta.parseˣ
+Base.Meta.partially_inline!ˣ
+Base.Meta.quot
+Base.Meta.replace_sourceloc!
+Base.Meta.show_sexpr
 Base.PipeBuffer
 Base.SecretBuffer!ˣ
 Base.__precompile__
@@ -966,6 +978,7 @@ Base.MainIncludeˣ
 Base.MathConstants
 Base.Mathˣ
 Base.Meta
+Base.Meta.Meta
 Base.Multimediaˣ
 Base.MultiplicativeInversesˣ
 Base.Orderˣ
@@ -1163,6 +1176,8 @@ Base.@v_str
 Base.@view
 Base.@views
 Base.@warn
+Base.Meta.@dump
+Base.Meta.@lowerˣ
 Core.@__doc__ˣ
 Core.@big_strˣ
 Core.@cmdˣ
@@ -1346,6 +1361,7 @@ Base.LogicalIndexˣ
 Base.MIME
 Base.MappingRFˣ
 Base.Matrix
+Base.Meta.ParseErrorˣ
 Base.Missing
 Base.MissingException
 Base.NTuple

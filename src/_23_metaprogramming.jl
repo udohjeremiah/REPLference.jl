@@ -58,7 +58,8 @@ metaprogram. The program that a metaprogram analyzes and manipulates is called t
 object-program is called the "target-language" or "object-language". However, the
 metalanguage and object-language can both be the same i.e., the object-language supports
 metaprogramming. Such an ability for a programming language to be a metalanguage and an
-object-language at the same time is called **reflection**.
+object language at the same time is called "homoiconicity", because it treats its own code
+as data.
 
 ## Classification of metaprogramming
 
@@ -216,6 +217,8 @@ function metaprogramming(; extmod=false)
             "@views",
             "@warn",
             "@which",
+            "Meta.@dump",
+            "Meta.@lowerˣ",
         ],
     ]
     methods = [
@@ -235,10 +238,22 @@ function metaprogramming(; extmod=false)
                 "repr",
                 "show",
             ],
-            "Others" => ["ccall_macro_parseˣ", "esc", "eval", "gensym", "macroexpand"],
+            "Others" => [
+                "Meta.lowerˣ",
+                "Meta.parseˣ",
+                "Meta.partially_inline!ˣ",
+                "Meta.quot",
+                "Meta.replace_sourceloc!",
+                "Meta.show_sexpr",
+                "ccall_macro_parseˣ",
+                "esc",
+                "eval",
+                "gensym",
+                "macroexpand",
+            ],
         ],
     ]
-    types = ["Types" => ["DataType", "Expr", "QuoteNode", "Symbol"]]
+    types = ["Types" => ["DataType", "Expr", "Meta.ParseErrorˣ", "QuoteNode", "Symbol"]]
     operators = ["Operators" => [":"]]
     stdlib => ["Stdlib" => ["Printf.@printf", "Printf.@sprintf"]]
     _print_names(macros, methods, types, operators)

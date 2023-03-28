@@ -16,7 +16,16 @@ end
 # 'ˣ' to indicate that they are not exported.
 function _names_to_dict()
     all_modules = [
-        Base, Base64, Core, InteractiveUtils, Dates, Printf, Random, Statistics, Unicode
+        Base,
+        Base64,
+        Core,
+        Dates,
+        InteractiveUtils,
+        Meta,
+        Printf,
+        Random,
+        Statistics,
+        Unicode,
     ]
     names_dict = Dict(
         :Constants => String[],
