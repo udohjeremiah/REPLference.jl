@@ -1740,7 +1740,7 @@ function metaprogramming(; extmod=false)
     ]
     types = ["Types" => ["DataType", "Expr", "Meta.ParseErrorˣ", "QuoteNode", "Symbol"]]
     operators = ["Operators" => [":"]]
-    stdlib => ["Stdlib" => ["Printf.@printf", "Printf.@sprintf"]]
+    stdlib = ["Stdlib" => ["Printf.@printf", "Printf.@sprintf"]]
     _print_names(macros, methods, types, operators)
     if extmod == true
         _print_names(stdlib)
