@@ -23,6 +23,7 @@ include("_19_module.jl")
 include("_20_regex.jl")
 include("_21_date.jl")
 include("_22_random.jl")
+include("_23_metaprogramming.jl")
 
 import Dates: AbstractTime
 import .Docs: doc
@@ -76,178 +77,184 @@ function subtree end
 function man(obj::Symbol)
     str = string(obj)
     # keywords
-    if match(r"^(?:keyword|reserved)"i, str) != nothing
+    if match(r"^(?:keyword|reserved)"i, str) !== nothing
         doc(keywords)
-    # variables
-    elseif match(r"^variable"i, str) != nothing
+        # variables
+    elseif match(r"^variable"i, str) !== nothing
         doc(variables)
-    # operators
-    elseif match(r"^operat(?:or|ion)"i, str) != nothing
+        # operators
+    elseif match(r"^operat(?:or|ion)"i, str) !== nothing
         doc(operators)
-    # integers
-    elseif match(r"^integer"i, str) != nothing
+        # integers
+    elseif match(r"^integer"i, str) !== nothing
         doc(integers)
-    # floating points
-    elseif match(r"^float"i, str) != nothing
+        # floating points
+    elseif match(r"^float"i, str) !== nothing
         doc(floats)
-    # complex numbers
-    elseif match(r"^complex"i, str) != nothing
+        # complex numbers
+    elseif match(r"^complex"i, str) !== nothing
         doc(complexs)
-    # rational numbers
-    elseif match(r"^rational"i, str) != nothing
+        # rational numbers
+    elseif match(r"^rational"i, str) !== nothing
         doc(rationals)
-    # irrationals
-    elseif match(r"^irrational"i, str) != nothing
+        # irrationals
+    elseif match(r"^irrational"i, str) !== nothing
         doc(irrationals)
-    # characters
-    elseif match(r"^character"i, str) != nothing
+        # characters
+    elseif match(r"^character"i, str) !== nothing
         doc(characters)
-    # strings
-    elseif match(r"^string"i, str) != nothing
+        # strings
+    elseif match(r"^string"i, str) !== nothing
         doc(strings)
-    # ranges
-    elseif match(r"^range"i, str) != nothing
+        # ranges
+    elseif match(r"^range"i, str) !== nothing
         doc(ranges)
-    # arrays
-    elseif match(r"^array"i, str) != nothing
+        # arrays
+    elseif match(r"^array"i, str) !== nothing
         doc(arrays)
-    # tuples
-    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
+        # tuples
+    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) !== nothing
         doc(tuples)
-    # dictionaries
-    elseif match(r"^dict"i, str) != nothing
+        # dictionaries
+    elseif match(r"^dict"i, str) !== nothing
         doc(dicts)
-    # sets
-    elseif match(r"^set"i, str) != nothing
+        # sets
+    elseif match(r"^set"i, str) !== nothing
         doc(sets)
-    # types
-    elseif match(r"^(?:type|datatype)"i, str) != nothing
+        # types
+    elseif match(r"^(?:type|datatype)"i, str) !== nothing
         doc(types)
-    # function
-    elseif match(r"^(?:function|method|procedure)"i, str) != nothing
+        # function
+    elseif match(r"^(?:function|method|procedure)"i, str) !== nothing
         doc(functions)
-    # files
-    elseif match(r"^(?:file|io|stream)"i, str) != nothing
+        # files
+    elseif match(r"^(?:file|io|stream)"i, str) !== nothing
         doc(files)
-    # modules
-    elseif match(r"^(?:module|package)"i, str) != nothing
+        # modules
+    elseif match(r"^(?:module|package)"i, str) !== nothing
         doc(modules)
-    # regexes
-    elseif match(r"^reg(?:ex|ular)"i, str) != nothing
+        # regexes
+    elseif match(r"^reg(?:ex|ular)"i, str) !== nothing
         doc(regexes)
-    # time and date
-    elseif match(r"^(?:time|date)"i, str) != nothing
+        # time and date
+    elseif match(r"^(?:time|date)"i, str) !== nothing
         doc(datetime)
-    # random numbers
-    elseif match(r"^rand"i, str) != nothing
+        # random numbers
+    elseif match(r"^rand"i, str) !== nothing
         doc(randoms)
+        # metaprogramming
+    elseif match(r"^meta"i, str) !== nothing
+        doc(metaprogramming)
     end
 end
 
 function fun(obj::Symbol; extmod=false)
     str = string(obj)
     # operators
-    if match(r"operat(?:or|ion)"i, str) != nothing
+    if match(r"operat(?:or|ion)"i, str) !== nothing
         operators(; extmod=extmod)
-    # integers
-    elseif match(r"^integer"i, str) != nothing
+        # integers
+    elseif match(r"^integer"i, str) !== nothing
         integers(; extmod=extmod)
-    # floating points
-    elseif match(r"^float"i, str) != nothing
+        # floating points
+    elseif match(r"^float"i, str) !== nothing
         floats(; extmod=extmod)
-    # complex numbers
-    elseif match(r"^complex"i, str) != nothing
+        # complex numbers
+    elseif match(r"^complex"i, str) !== nothing
         complexs(; extmod=extmod)
-    # rational numbers
-    elseif match(r"^rational"i, str) != nothing
+        # rational numbers
+    elseif match(r"^rational"i, str) !== nothing
         rationals(; extmod=extmod)
-    # irrationals
-    elseif match(r"^irrational"i, str) != nothing
+        # irrationals
+    elseif match(r"^irrational"i, str) !== nothing
         irrationals(; extmod=extmod)
-    # characters
-    elseif match(r"^character"i, str) != nothing
+        # characters
+    elseif match(r"^character"i, str) !== nothing
         characters(; extmod=extmod)
-    # strings
-    elseif match(r"^string"i, str) != nothing
+        # strings
+    elseif match(r"^string"i, str) !== nothing
         strings(; extmod=extmod)
-    # ranges
-    elseif match(r"^range"i, str) != nothing
+        # ranges
+    elseif match(r"^range"i, str) !== nothing
         ranges(; extmod=extmod)
-    # arrays
-    elseif match(r"^array"i, str) != nothing
+        # arrays
+    elseif match(r"^array"i, str) !== nothing
         arrays(; extmod=extmod)
-    # tuples
-    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) != nothing
+        # tuples
+    elseif match(r"^(?:tuple|named(.)?tuple)"i, str) !== nothing
         tuples(; extmod=extmod)
-    # dictionaries
-    elseif match(r"^dict"i, str) != nothing
+        # dictionaries
+    elseif match(r"^dict"i, str) !== nothing
         dicts(; extmod=extmod)
-    # sets
-    elseif match(r"^set"i, str) != nothing
+        # sets
+    elseif match(r"^set"i, str) !== nothing
         sets(; extmod=extmod)
-    # types
-    elseif match(r"^(?:type|datatype)"i, str) != nothing
+        # types
+    elseif match(r"^(?:type|datatype)"i, str) !== nothing
         types()
-    # function
-    elseif match(r"^(?:function|method|procedure)"i, str) != nothing
+        # function
+    elseif match(r"^(?:function|method|procedure)"i, str) !== nothing
         functions(; extmod=extmod)
-    # files
-    elseif match(r"^(?:file|io|stream)"i, str) != nothing
+        # files
+    elseif match(r"^(?:file|io|stream)"i, str) !== nothing
         files(; extmod=extmod)
-    # modules
-    elseif match(r"^(?:module|package)"i, str) != nothing
+        # modules
+    elseif match(r"^(?:module|package)"i, str) !== nothing
         modules(; extmod=extmod)
-    # regexes
-    elseif match(r"^re(?:gex|gular)"i, str) != nothing
+        # regexes
+    elseif match(r"^re(?:gex|gular)"i, str) !== nothing
         regexes(; extmod=extmod)
-    # time and date
-    elseif match(r"^(?:time|date)"i, str) != nothing
+        # time and date
+    elseif match(r"^(?:time|date)"i, str) !== nothing
         datetime(; extmod=extmod)
-    # random numbers
-    elseif match(r"^rand"i, str) != nothing
+        # random numbers
+    elseif match(r"^rand"i, str) !== nothing
         randoms(; extmod=extmod)
+        # metaprogramming
+    elseif match(r"^meta"i, str) !== nothing
+        metaprogramming(; extmod=extmod)
     end
 end
 
-man(::Integer)         = doc(integers)
-man(::AbstractFloat)   = doc(floats)
-man(::Complex)         = doc(complexs)
-man(::Rational)        = doc(rationals)
-man(::Irrational)      = doc(irrationals)
-man(::AbstractChar)    = doc(characters)
-man(::AbstractString)  = doc(strings)
-man(::AbstractRange)   = doc(ranges)
-man(::AbstractArray)   = doc(arrays)
-man(::Tuple)           = doc(tuples)
-man(::NamedTuple)      = doc(tuples)
-man(::AbstractDict)    = doc(dicts)
-man(::AbstractSet)     = doc(sets)
-man(::Type)            = doc(types)
-man(::Function)        = doc(functions)
-man(::IO)              = doc(files)
-man(::Module)          = doc(modules)
+man(::Integer) = doc(integers)
+man(::AbstractFloat) = doc(floats)
+man(::Complex) = doc(complexs)
+man(::Rational) = doc(rationals)
+man(::Irrational) = doc(irrationals)
+man(::AbstractChar) = doc(characters)
+man(::AbstractString) = doc(strings)
+man(::AbstractRange) = doc(ranges)
+man(::AbstractArray) = doc(arrays)
+man(::Tuple) = doc(tuples)
+man(::NamedTuple) = doc(tuples)
+man(::AbstractDict) = doc(dicts)
+man(::AbstractSet) = doc(sets)
+man(::Type) = doc(types)
+man(::Function) = doc(functions)
+man(::IO) = doc(files)
+man(::Module) = doc(modules)
 man(::AbstractPattern) = doc(regexes)
-man(::AbstractTime)    = doc(datetime)
+man(::AbstractTime) = doc(datetime)
 
-fun(::Integer; extmod=false)         = integers(; extmod=extmod)
-fun(::AbstractFloat; extmod=false)   = floats(; extmod=extmod)
-fun(::Complex; extmod=false)         = complexs(; extmod=extmod)
-fun(::Rational; extmod=false)        = rationals(; extmod=extmod)
-fun(::Irrational; extmod=false)      = irrationals(; extmod=extmod)
-fun(::AbstractChar; extmod=false)    = characters(; extmod=extmod)
-fun(::AbstractString; extmod=false)  = strings(; extmod=extmod)
-fun(::AbstractRange; extmod=false)   = ranges(; extmod=extmod)
-fun(::AbstractArray; extmod=false)   = arrays(; extmod=extmod)
-fun(::Tuple; extmod=false)           = tuples(; extmod=extmod)
-fun(::NamedTuple; extmod=false)      = tuples(; extmod=extmod)
-fun(::AbstractDict; extmod=false)    = dicts(; extmod=extmod)
-fun(::AbstractSet; extmod=false)     = sets(; extmod=extmod)
-fun(::Type; extmod=false)            = types(; extmod=extmod)
-fun(::Function; extmod=false)        = functions(; extmod=extmod)
-fun(::IO; extmod=false)              = files(; extmod=extmod)
-fun(::Module; extmod=false)          = modules(; extmod=extmod)
+fun(::Integer; extmod=false) = integers(; extmod=extmod)
+fun(::AbstractFloat; extmod=false) = floats(; extmod=extmod)
+fun(::Complex; extmod=false) = complexs(; extmod=extmod)
+fun(::Rational; extmod=false) = rationals(; extmod=extmod)
+fun(::Irrational; extmod=false) = irrationals(; extmod=extmod)
+fun(::AbstractChar; extmod=false) = characters(; extmod=extmod)
+fun(::AbstractString; extmod=false) = strings(; extmod=extmod)
+fun(::AbstractRange; extmod=false) = ranges(; extmod=extmod)
+fun(::AbstractArray; extmod=false) = arrays(; extmod=extmod)
+fun(::Tuple; extmod=false) = tuples(; extmod=extmod)
+fun(::NamedTuple; extmod=false) = tuples(; extmod=extmod)
+fun(::AbstractDict; extmod=false) = dicts(; extmod=extmod)
+fun(::AbstractSet; extmod=false) = sets(; extmod=extmod)
+fun(::Type; extmod=false) = types(; extmod=extmod)
+fun(::Function; extmod=false) = functions(; extmod=extmod)
+fun(::IO; extmod=false) = files(; extmod=extmod)
+fun(::Module; extmod=false) = modules(; extmod=extmod)
 fun(::AbstractPattern; extmod=false) = regexes(; extmod=extmod)
-fun(::AbstractTime; extmod=false)    = datetime(; extmod=extmod)
+fun(::AbstractTime; extmod=false) = datetime(; extmod=extmod)
 
 subtree(T::Type) = _subtype_tree(T)
 

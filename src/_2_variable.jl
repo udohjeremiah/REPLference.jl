@@ -930,20 +930,12 @@ interactive and non-interactive contexts, head over to
 https://docs.julialang.org/en/v1/manual/variables-and-scoping/#on-soft-scope.
 """
 function variables(; extmod=false)
-    macros = [
-        "Macros" => [
-            "@gensym", "@isdefined"
-        ]
-    ]
+    macros = ["Macros" => ["@gensym", "@isdefined"]]
     methods = [
         "Methods" => [
-            "True/False" => [
-                "isconst", "isdefined", "isidentifierˣ"
-            ],
-            "Others"     => [
-                "gensym"
-            ]
-        ]
+            "True/False" => ["isconst", "isdefined", "isidentifierˣ"],
+            "Others" => ["gensym"],
+        ],
     ]
-    _print_names(macros, methods)
+    return _print_names(macros, methods)
 end

@@ -372,81 +372,249 @@ julia> typemax(Rational{Int})
 1//0
 ```
 """
-function rationals(;extmod=false)
+function rationals(; extmod=false)
     constants = [
         "Constants" => [
-            "RoundDown", "RoundFromZero", "RoundNearest", "RoundNearestTiesAway",
-            "RoundNearestTiesUp", "RoundToZero", "RoundUp"
-        ]
+            "RoundDown",
+            "RoundFromZero",
+            "RoundNearest",
+            "RoundNearestTiesAway",
+            "RoundNearestTiesUp",
+            "RoundToZero",
+            "RoundUp",
+        ],
     ]
     macros = [
-        "Macros" => [
-            "@assert", "@doc", "@evalpoly", "@fastmath", "@show", "@showtime"
-        ]
+        "Macros" => ["@assert", "@doc", "@evalpoly", "@fastmath", "@show", "@showtime"]
     ]
     methods = [
         "Methods" => [
             "Addition, Division & Multiplication" => [
-                "canonicalize2ˣ", "cld", "div", "divrem", "evalpoly", "fld", "fld1",
-                "fldmod", "fldmod1", "fma", "gcd", "gcdx", "inv", "kron", "lcm", "mod",
-                "mod1", "muladd", "nextprod", "rem", "widemul"
+                "canonicalize2ˣ",
+                "cld",
+                "div",
+                "divrem",
+                "evalpoly",
+                "fld",
+                "fld1",
+                "fldmod",
+                "fldmod1",
+                "fma",
+                "gcd",
+                "gcdx",
+                "inv",
+                "kron",
+                "lcm",
+                "mod",
+                "mod1",
+                "muladd",
+                "nextprod",
+                "rem",
+                "widemul",
             ],
-            "Absolute Value, Min/Max & Sign"      => [
-                "abs", "abs2", "cmp", "copysign", "flipsign", "max", "min", "minmax",
-                "sign", "signbit"
+            "Absolute Value, Min/Max & Sign" => [
+                "abs",
+                "abs2",
+                "cmp",
+                "copysign",
+                "flipsign",
+                "max",
+                "min",
+                "minmax",
+                "sign",
+                "signbit",
             ],
-            "Logs, Powers & Roots"                => [
-                "cbrt", "exp", "exp10", "exp2", "expm1", "exponent", "hypot", "log",
-                "log10", "log1p", "log2", "nextpow", "prevpow", "sqrt"
+            "Logs, Powers & Roots" => [
+                "cbrt",
+                "exp",
+                "exp10",
+                "exp2",
+                "expm1",
+                "exponent",
+                "hypot",
+                "log",
+                "log10",
+                "log1p",
+                "log2",
+                "nextpow",
+                "prevpow",
+                "sqrt",
             ],
-            "Rouding"                             => [
-                "ceil", "clamp", "floor", "round", "trunc", "unsafe_trunc"
+            "Rouding" => ["ceil", "clamp", "floor", "round", "trunc", "unsafe_trunc"],
+            "Trigonometric & Hyperbolic" => [
+                "acos",
+                "acot",
+                "acotd",
+                "acoth",
+                "acsc",
+                "acscd",
+                "acsch",
+                "asec",
+                "asecd",
+                "asech",
+                "asin",
+                "asind",
+                "asinh",
+                "atan",
+                "atand",
+                "atanh",
+                "cis",
+                "cispi",
+                "cos",
+                "cosc",
+                "cosd",
+                "cosh",
+                "cospi",
+                "cot",
+                "cotd",
+                "coth",
+                "csc",
+                "cscd",
+                "csch",
+                "deg2rad",
+                "rad2deg",
+                "sec",
+                "secd",
+                "sech",
+                "sin",
+                "sinc",
+                "sincos",
+                "sincosd",
+                "sincospi",
+                "sind",
+                "sinh",
+                "sinpi",
+                "tan",
+                "tand",
+                "tanh",
             ],
-            "Trigonometric & Hyperbolic"          => [
-                "acos", "acot", "acotd", "acoth", "acsc", "acscd", "acsch", "asec", "asecd",
-                "asech", "asin", "asind", "asinh", "atan", "atand", "atanh", "cis", "cispi",
-                "cos", "cosc", "cosd", "cosh", "cospi", "cot", "cotd", "coth", "csc",
-                "cscd", "csch", "deg2rad", "rad2deg", "sec", "secd", "sech", "sin", "sinc",
-                "sincos", "sincosd", "sincospi", "sind", "sinh", "sinpi", "tan", "tand",
-                "tanh"
+            "True/False" => [
+                "hasproperty",
+                "ifelse",
+                "isa",
+                "isapprox",
+                "isbits",
+                "isdefined",
+                "isequal",
+                "iseven",
+                "isfinite",
+                "isgreaterˣ",
+                "isinf",
+                "isinteger",
+                "isless",
+                "ismutable",
+                "isnan",
+                "isodd",
+                "isone",
+                "ispow2",
+                "isreal",
+                "isunordered",
+                "iszero",
             ],
-            "True/False"                          => [
-                "hasproperty", "ifelse", "isa", "isapprox", "isbits", "isdefined",
-                "isequal", "iseven", "isfinite", "isgreaterˣ", "isinf", "isinteger",
-                "isless", "ismutable", "isnan", "isodd", "isone", "ispow2", "isreal",
-                "isunordered", "iszero"
+            "Type-Conversion" => [
+                "big",
+                "cconvertˣ",
+                "collect",
+                "complex",
+                "convert",
+                "float",
+                "oftype",
+                "promote",
+                "string",
+                "unsafe_convertˣ",
+                "widen",
             ],
-            "Type-Conversion"                     => [
-                "big", "cconvertˣ", "collect", "complex", "convert", "float", "oftype",
-                "promote", "string", "unsafe_convertˣ", "widen"
+            "Others" => [
+                "denominator",
+                "display",
+                "dump",
+                "getfield",
+                "getproperty",
+                "identity",
+                "modf",
+                "nfields",
+                "numerator",
+                "one",
+                "oneunit",
+                "print",
+                "println",
+                "printstyled",
+                "propertynames",
+                "redisplay",
+                "repr",
+                "show",
+                "sizeof",
+                "summary",
+                "summarysizeˣ",
+                "typeassert",
+                "typeof",
+                "typemax",
+                "typemin",
+                "zero",
             ],
-            "Others"                              => [
-                "denominator", "display", "dump", "getfield", "getproperty", "identity",
-                "modf", "nfields", "numerator", "one", "oneunit", "print", "println",
-                "printstyled", "propertynames", "redisplay", "repr", "show", "sizeof",
-                "summary", "summarysizeˣ", "typeassert", "typeof", "typemax", "typemin",
-                "zero"
-            ]
-        ]
+        ],
     ]
     types = [
-        "Types" => [
-            "DataType", "Number", "Pair", "Rational", "Real", "Ref", "RoundingMode"  
-        ]
+        "Types" => ["DataType", "Number", "Pair", "Rational", "Real", "Ref", "RoundingMode"]
     ]
     operators = [
         "Operators" => [
-            "!", "!=", "!==", "%", "*", "+", "-", "/", "<", "<<", "<=", "==", "=>", ">",
-            ">=", ">=", "\\", "^", "÷", "∈", "∉", "∋", "∌", "√", "∛", "∩", "∪", "≈", "≉",
-            "≠", "≡", "≢", "≤", "≥", "⊆", "⊇", "⊈", "⊉", "⊊", "⊋", "==="
-        ]
+            "!",
+            "!=",
+            "!==",
+            "%",
+            "*",
+            "+",
+            "-",
+            "/",
+            "<",
+            "<<",
+            "<=",
+            "==",
+            "=>",
+            ">",
+            ">=",
+            ">=",
+            "\\",
+            "^",
+            "÷",
+            "∈",
+            "∉",
+            "∋",
+            "∌",
+            "√",
+            "∛",
+            "∩",
+            "∪",
+            "≈",
+            "≉",
+            "≠",
+            "≡",
+            "≢",
+            "≤",
+            "≥",
+            "⊆",
+            "⊇",
+            "⊈",
+            "⊉",
+            "⊊",
+            "⊋",
+            "===",
+        ],
     ]
     stdlib = [
         "Stdlib" => [
-            "Printf.@printf", "Printf.@sprintf", "Printf.Formatˣ", "Printf.Pointerˣ",
-            "Printf.PositionCounterˣ", "Printf.Specˣ", "Printf.formatˣ", "Printf.tofloatˣ",
-            "Statistics.clampcorˣ", "Statistics.middle",
-        ]
+            "Printf.@printf",
+            "Printf.@sprintf",
+            "Printf.Formatˣ",
+            "Printf.Pointerˣ",
+            "Printf.PositionCounterˣ",
+            "Printf.Specˣ",
+            "Printf.formatˣ",
+            "Printf.tofloatˣ",
+            "Statistics.clampcorˣ",
+            "Statistics.middle",
+        ],
     ]
     _print_names(constants, macros, methods, types, operators)
     if extmod == true

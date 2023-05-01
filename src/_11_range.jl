@@ -309,95 +309,256 @@ described here, use the `help>` mode in the Julia REPL.
   created with the literals `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, it is memory-intensive
   because each element is allocated a size and location in the memory.
 """
-function ranges(;extmod=false)
-    constants = [
-        "Constants" => [
-            "InsertionSort", "MergeSort", "QuickSort"
-        ]
-    ]
-    macros = [
-        "Macros" => [
-            "@assert", "@boundscheck", "@show", "@showtime", "@simd"
-        ]
-    ]
+function ranges(; extmod=false)
+    constants = ["Constants" => ["InsertionSort", "MergeSort", "QuickSort"]]
+    macros = ["Macros" => ["@assert", "@boundscheck", "@show", "@showtime", "@simd"]]
     methods = [
         "Methods" => [
-            "Cocatenation"    => [
-                "cat", "stack", "vcat"
+            "Cocatenation" => ["cat", "stack", "vcat"],
+            "Constructors" => ["range"],
+            "Step & Indices" => [
+                "eachindex",
+                "first",
+                "firstindex",
+                "get",
+                "getindex",
+                "indexin",
+                "keys",
+                "keytype",
+                "last",
+                "lastindex",
+                "nextind",
+                "prevind",
+                "step",
+                "to_indexˣ",
+                "to_indices",
             ],
-            "Constructors"    => [
-                "range",
+            "Loop" => ["enumerate", "foreach", "pairs", "zip"],
+            "Mathematical" => [
+                "accumulate",
+                "argmax",
+                "argmin",
+                "cmp",
+                "cumprod",
+                "cumsum",
+                "extrema",
+                "intersect",
+                "invperm",
+                "kron",
+                "lcm",
+                "max",
+                "maximum",
+                "min",
+                "minimum",
+                "minmax",
+                "prod",
+                "setdiff",
+                "sum",
+                "symdiff",
+                "union",
+                "unique",
             ],
-            "Step & Indices"  => [
-                "eachindex", "first", "firstindex", "get", "getindex", "indexin", "keys",
-                "keytype", "last", "lastindex", "nextind", "prevind", "step", "to_indexˣ",
-                "to_indices"
+            "Reduce" => [
+                "add_sumˣ",
+                "foldl",
+                "foldr",
+                "mapfoldl",
+                "mapfoldr",
+                "mapreduce",
+                "mapreduce_emptyˣ",
+                "mapreduce_firstˣ",
+                "mul_prodˣ",
+                "reduce",
+                "reduce_emptyˣ",
+                "reduce_firstˣ",
             ],
-            "Loop"            => [
-                "enumerate", "foreach", "pairs", "zip"
+            "Search & Find" => [
+                "count",
+                "filter",
+                "findall",
+                "findfirst",
+                "findlast",
+                "findmax",
+                "findmin",
+                "findnext",
+                "findprev",
             ],
-            "Mathematical"    => [
-                "accumulate", "argmax", "argmin", "cmp", "cumprod", "cumsum", "extrema",
-                "intersect", "invperm", "kron", "lcm", "max", "maximum", "min", "minimum",
-                "minmax", "prod", "setdiff", "sum", "symdiff", "union", "unique"
+            "Sorting" => [
+                "insorted",
+                "searchsorted",
+                "searchsortedfirst",
+                "searchsortedlast",
+                "sort",
+                "sortperm",
             ],
-            "Reduce"          => [
-                "add_sumˣ", "foldl", "foldr", "mapfoldl", "mapfoldr", "mapreduce",
-                "mapreduce_emptyˣ", "mapreduce_firstˣ", "mul_prodˣ", "reduce",
-                "reduce_emptyˣ", "reduce_firstˣ"
-            ],
-            "Search & Find"   => [
-                "count", "filter", "findall", "findfirst", "findlast", "findmax", "findmin",
-                "findnext", "findprev",
-            ],
-            "Sorting"            => [
-                "insorted", "searchsorted", "searchsortedfirst", "searchsortedlast", "sort",
-                "sortperm"
-            ],
-            "True/False"      => [
-                "checkbounds", "checkbounds_indicesˣ", "checkindex", "hasfastinˣ",
-                "hasproperty", "ifelse", "in", "isa", "isapprox", "isassigned", "isbits",
-                "isdefined", "isdisjoint", "isdoneˣ", "isempty", "isequal", "isgreaterˣ",
-                "isless", "ismutable", "isperm", "isreal", "issetequal", "issubset",
-                "isunordered", "iszero"
+            "True/False" => [
+                "checkbounds",
+                "checkbounds_indicesˣ",
+                "checkindex",
+                "hasfastinˣ",
+                "hasproperty",
+                "ifelse",
+                "in",
+                "isa",
+                "isapprox",
+                "isassigned",
+                "isbits",
+                "isdefined",
+                "isdisjoint",
+                "isdoneˣ",
+                "isempty",
+                "isequal",
+                "isgreaterˣ",
+                "isless",
+                "ismutable",
+                "isperm",
+                "isreal",
+                "issetequal",
+                "issubset",
+                "isunordered",
+                "iszero",
             ],
             "Type-Conversion" => [
-                "cconvertˣ", "collect", "complex", "convert", "float", "oftype", "promote",
-                "similar", "string",
+                "cconvertˣ",
+                "collect",
+                "complex",
+                "convert",
+                "float",
+                "oftype",
+                "promote",
+                "similar",
+                "string",
             ],
-            "Others"          => [
-                "broadcast", "bytes2hex", "checked_lengthˣ", "clamp", "display", "dump",
-                "eltype", "empty", "getfield", "getproperty", "identity", "iterate", "join",
-                "length", "map", "nfields", "objectid", "only", "pointer", "print",
-                "print_rangeˣ", "println", "printstyled", "propertynames", "redisplay",
-                "repeat", "replace", "repr", "restˣ", "reverse", "show", "size", "sizeof",
-                "split_restˣ", "summary", "summarysizeˣ", "typeassert", "typeof"
-            ]
-        ]
+            "Others" => [
+                "broadcast",
+                "bytes2hex",
+                "checked_lengthˣ",
+                "clamp",
+                "display",
+                "dump",
+                "eltype",
+                "empty",
+                "getfield",
+                "getproperty",
+                "identity",
+                "iterate",
+                "join",
+                "length",
+                "map",
+                "nfields",
+                "objectid",
+                "only",
+                "pointer",
+                "print",
+                "print_rangeˣ",
+                "println",
+                "printstyled",
+                "propertynames",
+                "redisplay",
+                "repeat",
+                "replace",
+                "repr",
+                "restˣ",
+                "reverse",
+                "show",
+                "size",
+                "sizeof",
+                "split_restˣ",
+                "summary",
+                "summarysizeˣ",
+                "typeassert",
+                "typeof",
+            ],
+        ],
     ]
     types = [
         "Types" => [
-            "AbstractRange", "AbstractUnitRange", "Colon", "DataType", "Generatorˣ",
-            "IdentityUnitRangeˣ", "IteratorEltypeˣ", "IteratorSizeˣ", "LinRange",
-            "LinearIndices", "OneToˣ", "OrdinalRange", "Pair", "PartialQuickSort",
-            "RangeStepStyleˣ", "Ref", "Sliceˣ", "StepRange", "StepRangeLen",
-            "TwicePrecisionˣ", "UnitRange"
-        ]
+            "AbstractRange",
+            "AbstractUnitRange",
+            "Colon",
+            "DataType",
+            "Generatorˣ",
+            "IdentityUnitRangeˣ",
+            "IteratorEltypeˣ",
+            "IteratorSizeˣ",
+            "LinRange",
+            "LinearIndices",
+            "OneToˣ",
+            "OrdinalRange",
+            "Pair",
+            "PartialQuickSort",
+            "RangeStepStyleˣ",
+            "Ref",
+            "Sliceˣ",
+            "StepRange",
+            "StepRangeLen",
+            "TwicePrecisionˣ",
+            "UnitRange",
+        ],
     ]
     operators = [
         "Operators" => [
-            "!", "!=", "!==", "%", "'", "*", "+", "-", "/", ":", "<", "<<", "<=", "==",
-            "=>", ">", ">=", "\\", "^", "÷", "∈", "∉", "∋", "∌", "√", "∩", "∪", "≈", "≉",
-            "≠", "≡", "≢", "≤", "≥", "⊆", "⊇", "⊈", "⊉", "⊊", "⊋", "==="
-        ]
+            "!",
+            "!=",
+            "!==",
+            "%",
+            "'",
+            "*",
+            "+",
+            "-",
+            "/",
+            ":",
+            "<",
+            "<<",
+            "<=",
+            "==",
+            "=>",
+            ">",
+            ">=",
+            "\\",
+            "^",
+            "÷",
+            "∈",
+            "∉",
+            "∋",
+            "∌",
+            "√",
+            "∩",
+            "∪",
+            "≈",
+            "≉",
+            "≠",
+            "≡",
+            "≢",
+            "≤",
+            "≥",
+            "⊆",
+            "⊇",
+            "⊈",
+            "⊉",
+            "⊊",
+            "⊋",
+            "===",
+        ],
     ]
     stdlib = [
         "Stdlib" => [
-            "Printf.@printf", "Printf.@sprintf", "Printf.Formatˣ", "Printf.Pointerˣ",
-            "Printf.PositionCounterˣ", "Printf.Specˣ", "Printf.formatˣ", "Statistics.mean",
-            "Statistics.median", "Statistics.middle", "Statistics.quantile",
-            "Statistics.std", "Statistics.stdm", "Statistics.var", "Statistics.varm"
-        ]
+            "Printf.@printf",
+            "Printf.@sprintf",
+            "Printf.Formatˣ",
+            "Printf.Pointerˣ",
+            "Printf.PositionCounterˣ",
+            "Printf.Specˣ",
+            "Printf.formatˣ",
+            "Statistics.mean",
+            "Statistics.median",
+            "Statistics.middle",
+            "Statistics.quantile",
+            "Statistics.std",
+            "Statistics.stdm",
+            "Statistics.var",
+            "Statistics.varm",
+        ],
     ]
     _print_names(constants, macros, methods, types, operators)
     if extmod == true
