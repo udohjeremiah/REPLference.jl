@@ -55,8 +55,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
         - [ ] Changing the access permissions and attributes of a file.
 
 - [ ] Create the `src` directory:
-    - [ ] Create a `_25_pointer.jl` file that contains a manual about pointers in Julia and
-          the methods that can be called on them.
     - [ ] Create a `_26_system.jl` file that contains a manual about systems in Julia and
           the methods that can be called on the topic.
     - [ ] Create a `_27_thread.jl` file that contains a manual about threads in Julia and
@@ -69,6 +67,8 @@ To see what's happening in a section, click on the arrow symbol (▶).
 
 - [ ] Create a `_24_error.jl` file that contains a manual about error handling in Julia
       and the methods that can be called on the topic.
+- [ ] Create a `_25_pointer.jl` file that contains a manual about pointers in Julia and
+      the methods that can be called on them.
 </details>
 
 ## Done ✓
