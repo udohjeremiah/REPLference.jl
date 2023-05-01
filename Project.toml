@@ -1,7 +1,7 @@
 name = "REPLference"
 uuid = "89b048f0-36f8-47dc-b812-110e59d1ec6a"
 authors = ["Udoh Jeremiah <udohjeremiah@icloud.com> and contributors"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
