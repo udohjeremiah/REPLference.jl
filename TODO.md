@@ -68,10 +68,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 ## In Progress...
 
 <details><summary></summary>
-
-- [ ] Create the `_23_metaprogramming.jl` file:
-      [`metaprogramming`](https://github.com/udohjeremiah/REPLference.jl/tree/metaprogramming)
-      [@udohjeremiah](https://github.com/udohjeremiah)
 </details>
 
 ## Done ✓
@@ -84,4 +80,6 @@ To see what's happening in a section, click on the arrow symbol (▶).
 - [x] Create the `.JuliaFormatter.jl` file and use `BlueStyle`:
       [`#60`](https://github.com/udohjeremiah/REPLference.jl/pull/60)
       [@udohjeremiah](https://github.com/udohjeremiah)
+- [x] Create the `_23_metaprogramming.jl` file:
+      [`#64`](https://github.com/udohjeremiah/REPLference.jl/pull/64)
 </details>
