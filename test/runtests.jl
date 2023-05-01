@@ -40,6 +40,7 @@ using Test
     @test typeof(man(:regex)) === Markdown.MD
     @test typeof(man(:time)) === Markdown.MD
     @test typeof(man(:random)) === Markdown.MD
+    @test typeof(man(:meta)) === Markdown.MD
 
     @test man(:keywords) == man(:reserved)
     @test man(:operators) == man(:operations)
@@ -72,6 +73,7 @@ using Test
     @test fun(:files) === nothing
     @test fun(:modules) === nothing
     @test fun(:regex) === nothing
+    @test fun(:meta) === nothing
 
     @test fun(:keywords) == fun(:reserved)
     @test fun(:operators) == fun(:operations)
@@ -104,6 +106,7 @@ using Test
     @test fun(:files; extmod=true) === nothing
     @test fun(:modules; extmod=true) === nothing
     @test fun(:regex; extmod=true) === nothing
+    @test fun(:meta; extmod=true) === nothing
 
     @test subtree(Number) === nothing
     @test subtree(Vector) === nothing
