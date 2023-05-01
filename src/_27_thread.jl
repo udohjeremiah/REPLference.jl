@@ -1,0 +1,87 @@
+"""
+"""
+function threads(; extmod = false)
+    macros = [
+        "Macros" => [
+            "@cfunction",
+            "@assert",
+            "@async",
+            "@lock",
+            "@lock_nofailˣ",
+            "@sync",
+            "@task",
+            "@threadcall",
+        ],
+    ]
+    methods = [
+        "Methods" => [
+            "In-Place" => ["put!", "take!"],
+            "True/False" => [
+                "isa",
+                "islocked",
+                "isopen",
+                "isready",
+                "istaskdone",
+                "istaskfailed",
+                "istaskstarted",
+                "process_exited",
+                "process_running",
+            ],
+            "Others" => [
+                "acquireˣ",
+                "asyncmap",
+                "asyncmap!",
+                "atexit",
+                "bind",
+                "channeled_tasksˣ",
+                "closewrite",
+                "current_exceptions",
+                "current_task",
+                "detach",
+                "disable_sigint",
+                "errormonitor",
+                "fetch",
+                "finalize",
+                "finalizer",
+                "getpid",
+                "ignorestatus",
+                "kill",
+                "lock",
+                "notify",
+                "releaseˣ",
+                "reset",
+                "schedule",
+                "sleep",
+                "success",
+                "task_local_storage",
+                "trylock",
+                "unlock",
+                "wait",
+                "yield",
+                "yieldto",
+            ],
+        ],
+    ]
+    types = [
+        "Types" => [
+            "AbstractChannel",
+            "AbstractLockˣ",
+            "AlwaysLockedSTˣ",
+            "AsyncCollectorˣ",
+            "AsyncConditionˣ",
+            "AsyncGeneratorˣ",
+            "Channel",
+            "Condition",
+            "Eventˣ",
+            "GenericConditionˣ",
+            "InterConditionalˣ",
+            "Pipe",
+            "ReentrantLock",
+            "Semaphoreˣ",
+            "ThreadSynchronizerˣ",
+            "Task",
+            "Timer",
+        ],
+    ]
+    _print_names(macros, methods, types)
+end
