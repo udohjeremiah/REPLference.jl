@@ -193,3 +193,10 @@ Integer
    ├─ UInt64
    └─ UInt8
 ```
+
+# Package Status
+I regret to inform you that, due to time constraints, I am no longer able to maintain the package/repository in question. I have thoroughly enjoyed working on it and providing updates thus far.
+
+However, I believe in the power of open-source collaboration and would like to offer an opportunity to anyone who is passionate about maintaining this package/repository to take over its ownership. If you are interested in becoming the new maintainer, kindly notify me, and I will gladly transfer ownership to you.
+
+I appreciate your understanding and support throughout this journey. Thank you.
