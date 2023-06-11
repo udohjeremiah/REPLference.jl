@@ -5,8 +5,8 @@
         <td>
             <a href="https://github.com/udohjeremiah/REPLference.jl/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-blue"/></a>
             <a href="https://github.com/udohjeremiah/REPLference.jl/blob/master/CITATION.bib"><img src="https://img.shields.io/badge/Citation-Cite%20this%20repository-blue"/></a>
-            <a href="https://img.shields.io/badge/Development-Not%20Active-blueviolet"><img src="https://img.shields.io/badge/Development-Not%20Active-blueviolet"/></a>
-            <a href="https://img.shields.io/badge/Maintained%3F-Yes-success" style="pointer-events: none;"><img src="https://img.shields.io/badge/Maintained%3F-Yes-success"/></a>
+            <a href="https://img.shields.io/badge/Development-NOT%20ACTIVE-red"><img src="https://img.shields.io/badge/Development-NOT%20ACTIVE-red"/></a>
+            <a href="https://img.shields.io/badge/Maintained%3F-NO-red" style="pointer-events: none;"><img src="https://img.shields.io/badge/Maintained%3F-NO-red"/></a>
         </td>
     </tr>
     <!-- Stats -->
